@@ -26,8 +26,8 @@
                         </div>
                         <div class="level-item has-text-centered">
                             <div>
-                                <p class="heading">Kills</p>
-                                <p class="title">4526</p>
+                                <p class="heading">Version</p>
+                                <p class="title">1.12.3</p>
                             </div>
                         </div>
                         <div class="level-item has-text-centered">

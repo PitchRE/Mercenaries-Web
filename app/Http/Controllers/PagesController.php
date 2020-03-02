@@ -14,4 +14,9 @@ class PagesController extends Controller
         return view('pages.marketplace');
     }
 
+    public function inventory()
+    {
+        return view('pages.inventory');
+    }
+
 }

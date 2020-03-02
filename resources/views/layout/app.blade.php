@@ -47,7 +47,7 @@
                         <a href="{{route('marketplace')}}" class="navbar-item">
                             Marketplace
                         </a>
-                        <a class="navbar-item">
+                        <a href="{{route('inventory')}}" class="navbar-item">
                             Inventory
                         </a>
                         <a class="navbar-item">

@@ -20,3 +20,4 @@ Route::GET('/login', 'PagesController@LoginView')->name('login_show');
 Route::get('/logout', 'AuthController@Logout')->name('logout');
 
 Route::GET('/marketplace', 'PagesController@marketplace')->name('marketplace');
+Route::GET('/inventory', 'PagesController@inventory')->name('inventory');
