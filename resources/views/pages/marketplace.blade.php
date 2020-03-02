@@ -23,28 +23,16 @@
                     </p>
                     <ul class="menu-list">
                         <li>
-                            <a
-                                href="{{route('marketplace', ['type' => 'head'])}}"
-                                >Head</a
-                            >
+                            <a class="is-selected" href="{{route('marketplace', ['type' => 'head'])}}">Head</a>
                         </li>
                         <li>
-                            <a
-                                href="{{route('marketplace', ['type' => 'body'])}}"
-                                >Body</a
-                            >
+                            <a href="{{route('marketplace', ['type' => 'body'])}}">Body</a>
                         </li>
                         <li>
-                            <a
-                                href="{{route('marketplace', ['type' => 'hands'])}}"
-                                >Hands</a
-                            >
+                            <a href="{{route('marketplace', ['type' => 'hands'])}}">Hands</a>
                         </li>
                         <li>
-                            <a
-                                href="{{route('marketplace', ['type' => 'legs'])}}"
-                                >Legs</a
-                            >
+                            <a href="{{route('marketplace', ['type' => 'legs'])}}">Legs</a>
                         </li>
                     </ul>
                     <p class="menu-label">
@@ -52,28 +40,16 @@
                     </p>
                     <ul class="menu-list">
                         <li>
-                            <a
-                                href="{{route('marketplace', ['type' => 'melee'])}}"
-                                >Melee</a
-                            >
+                            <a href="{{route('marketplace', ['type' => 'melee'])}}">Melee</a>
                         </li>
                         <li>
-                            <a
-                                href="{{route('marketplace', ['type' => 'ranged'])}}"
-                                >Ranged</a
-                            >
+                            <a href="{{route('marketplace', ['type' => 'ranged'])}}">Ranged</a>
                         </li>
                         <li>
-                            <a
-                                href="{{route('marketplace', ['type' => 'thrown'])}}"
-                                >Thrown</a
-                            >
+                            <a href="{{route('marketplace', ['type' => 'thrown'])}}">Thrown</a>
                         </li>
                         <li>
-                            <a
-                                href="{{route('marketplace', ['type' => 'ammunition'])}}"
-                                >Ammunition</a
-                            >
+                            <a href="{{route('marketplace', ['type' => 'ammunition'])}}">Ammunition</a>
                         </li>
                     </ul>
                     <p class="menu-label">
@@ -81,44 +57,34 @@
                     </p>
                     <ul class="menu-list">
                         <li>
-                            <a
-                                href="{{route('marketplace', ['type' => 'horse'])}}"
-                                >Horses</a
-                            >
+                            <a href="{{route('marketplace', ['type' => 'horse'])}}">Horses</a>
                         </li>
                     </ul>
                 </aside>
             </div>
             <div class="column">
                 <div class="columns is-multiline">
-                    @for ($i = 0; $i < 6; $i++)
-                    <div class="column is-3 ">
+                    @for ($i = 0; $i < 6; $i++) <div class="column is-3 ">
                         <div class="card">
                             <header class="card-header">
-                                <p class="card-header-title">Item {{ $i }}</p>
+                                <span class="card-header-title">Item {{ $i }}</span>
                             </header>
                             <div class="card-content">
                                 <div class="content">
-                                    <img
-                                        src="https://i.etsystatic.com/14134862/r/il/f8f064/1191420347/il_570xN.1191420347_lh4l.jpg"
-                                        alt=""
-                                        srcset=""
-                                    />
+                                    <img src="https://i.etsystatic.com/14134862/r/il/f8f064/1191420347/il_570xN.1191420347_lh4l.jpg"
+                                        alt="" srcset="" />
                                 </div>
-                                <code class="has-text-centered">10000$</code>
+                                <p class="has-text-centered">2112` <i class="fas fa-coins"></i></p>
                             </div>
                             <footer class="card-footer">
-                                <a
-                                    href="#"
-                                    class="card-footer-item has-background-success"
-                                    >Buy</a
-                                >
+                                <a href="#"
+                                    class="card-footer-item @if($i == 3)has-background-danger is-disabled @else has-background-success @endif">Buy</a>
                             </footer>
                         </div>
-                    </div>
-                    @endfor
                 </div>
+                @endfor
             </div>
         </div>
     </div>
+</div>
 </div>
