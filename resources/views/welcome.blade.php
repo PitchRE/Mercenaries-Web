@@ -15,7 +15,7 @@
                         <div class="level-item has-text-centered ">
                             <div>
                                 <p class="heading">Players</p>
-                                <p class="title">3,456</p>
+                                <p class="title">{{$users->count()}}</p>
                             </div>
                         </div>
                         <div class="level-item has-text-centered">

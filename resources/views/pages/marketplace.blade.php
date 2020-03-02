@@ -8,7 +8,7 @@
                     Marketplace
                 </h1>
                 <h1 class="subtitle has-text-centered">
-                    10000 <i class="fas fa-coins"></i>
+                    {{$user->gold}} <i class="fas fa-coins"></i>
                 </h1>
             </div>
         </div>

@@ -3,11 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Item;
+use App\User;
 use Auth;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+
+    public function index()
+    {
+        $users = User::all();
+        return view('welcome', compact('users'));
+    }
     public function LoginView()
     {
 
@@ -45,7 +52,7 @@ class PagesController extends Controller
                 $Items = Item::Where('type', 'itp_type_horse')->get();
                 break;
             default:
-                $Items = Item::Where('type', 'itp_type_head_armor')->get();
+                $Items = Item::all();
                 break;
         }
 

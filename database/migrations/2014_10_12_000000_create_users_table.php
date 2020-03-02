@@ -22,6 +22,9 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
+            $table->integer('exp')->default(0);
+            $table->integer('exp_next_level')->default(50);
+            $table->integer('level')->default(1);
             $table->string('secret_key')->default(0);
             $table->string('unique_id')->default(0);
             $table->integer('kills')->default(0);
@@ -35,7 +38,7 @@ class CreateUsersTable extends Migration
             $table->integer('PowerStrike')->default(0);
             $table->integer('PowerThrow')->default(0);
             $table->integer('PowerDraw')->default(0);
-            $table->integer('Reloading')->default(0);
+            $table->integer('Shooting_from_Horseback')->default(0);
             $table->integer('Shield')->default(0);
             $table->integer('Athletics')->default(0);
             $table->integer('Riding')->default(0);
@@ -45,7 +48,7 @@ class CreateUsersTable extends Migration
             $table->integer('Polearms')->default(0);
             $table->integer('Archery')->default(0);
             $table->integer('Throwing')->default(0);
-            $table->integer('Crossbows')->default(0);
+            $table->integer('Firearms')->default(0);
         });
     }
 

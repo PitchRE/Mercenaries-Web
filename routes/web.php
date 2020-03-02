@@ -11,14 +11,11 @@
 |
  */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::POST('/login_post', 'AuthController@doLogin')->name('login_execute');
 Route::GET('/login', 'PagesController@LoginView')->name('login_show');
 Route::get('/logout', 'AuthController@Logout')->name('logout');
 
+Route::GET('/', 'PagesController@index')->name('index');
 Route::GET('/marketplace', 'PagesController@marketplace')->name('marketplace');
 Route::GET('/inventory', 'PagesController@inventory')->name('inventory');
 Route::GET('/stats', 'PagesController@stats')->name('stats');
