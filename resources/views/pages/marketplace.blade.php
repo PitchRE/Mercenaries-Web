@@ -64,27 +64,34 @@
             </div>
             <div class="column">
                 <div class="columns is-multiline">
-                    @for ($i = 0; $i < 6; $i++) <div class="column is-3 ">
+
+
+                    @foreach ($Items as $item)
+
+
+                    <div class="column is-3 ">
                         <div class="card">
                             <header class="card-header">
-                                <span class="card-header-title">Item {{ $i }}</span>
+                                <span class="card-header-title">{{$item->name}}</span>
                             </header>
                             <div class="card-content">
                                 <div class="content">
-                                    <img src="https://i.etsystatic.com/14134862/r/il/f8f064/1191420347/il_570xN.1191420347_lh4l.jpg"
+                                    <img src="{{$item->image ?? "https://previews.123rf.com/images/abluecup/abluecup1309/abluecup130900082/22175873-a-3d-human-character-a-question-mark.jpg"}}"
                                         alt="" srcset="" />
                                 </div>
-                                <p class="has-text-centered">2112` <i class="fas fa-coins"></i></p>
+                                <p class="has-text-centered">{{$item->price}} <i class="fas fa-coins"></i></p>
                             </div>
                             <footer class="card-footer">
                                 <a href="#"
-                                    class="card-footer-item @if($i == 3)has-background-danger is-disabled @else has-background-success @endif">Buy</a>
+                                    class="card-footer-item @if($user->gold < $item->price)has-background-danger is-disabled @else has-background-success @endif">Buy</a>
                             </footer>
                         </div>
+                    </div>
+                    @endforeach
+
+
                 </div>
-                @endfor
             </div>
         </div>
     </div>
-</div>
 </div>
