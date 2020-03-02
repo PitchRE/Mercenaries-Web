@@ -22,7 +22,29 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            $table->integer('STR');
+            $table->string('secret_key')->default(0);
+            $table->string('unique_id')->default(0);
+            $table->integer('kills')->default(0);
+            $table->integer('deaths')->default(0);
+
+            $table->integer('strength')->default(0);
+            $table->integer('agility')->default(0);
+
+            $table->integer('Ironflesh')->default(0);
+            $table->integer('PowerStrike')->default(0);
+            $table->integer('PowerThrow')->default(0);
+            $table->integer('PowerDraw')->default(0);
+            $table->integer('Reloading')->default(0);
+            $table->integer('Shield')->default(0);
+            $table->integer('Athletics')->default(0);
+            $table->integer('Riding')->default(0);
+
+            $table->integer('OneHanded')->default(20);
+            $table->integer('TwoHanded')->default(0);
+            $table->integer('Polearms')->default(0);
+            $table->integer('Archery')->default(0);
+            $table->integer('Throwing')->default(0);
+            $table->integer('Crossbows')->default(0);
         });
     }
 
