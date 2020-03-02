@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
+
 class PagesController extends Controller
 {
     public function LoginView()
@@ -17,6 +19,12 @@ class PagesController extends Controller
     public function inventory()
     {
         return view('pages.inventory');
+    }
+
+    public function stats()
+    {
+        $user = Auth::user();
+        return view('pages.stats', compact('user'));
     }
 
 }

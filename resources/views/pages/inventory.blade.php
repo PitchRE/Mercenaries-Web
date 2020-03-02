@@ -176,7 +176,7 @@
                                 </div>
                                 <p class="has-text-centered">
                                     2112` <i class="fas fa-coins"></i>
-                                </p>
+                                </p> 
                             </div>
                             <footer class="card-footer">
                                 <a

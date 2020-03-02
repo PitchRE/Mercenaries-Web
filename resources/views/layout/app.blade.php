@@ -50,7 +50,7 @@
                         <a href="{{route('inventory')}}" class="navbar-item">
                             Inventory
                         </a>
-                        <a class="navbar-item">
+                        <a href="{{route('stats')}}" class="navbar-item">
                             Statistics
                         </a>
                         <hr class="navbar-divider" />

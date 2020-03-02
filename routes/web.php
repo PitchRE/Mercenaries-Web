@@ -21,3 +21,5 @@ Route::get('/logout', 'AuthController@Logout')->name('logout');
 
 Route::GET('/marketplace', 'PagesController@marketplace')->name('marketplace');
 Route::GET('/inventory', 'PagesController@inventory')->name('inventory');
+Route::GET('/stats', 'PagesController@stats')->name('stats');
+Route::POST('/stats', 'UserController@save_stats')->name('post_stats');
