@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Item;
+use App\server;
 use App\User;
 use Auth;
 use Illuminate\Http\Request;
@@ -13,7 +14,9 @@ class PagesController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('welcome', compact('users'));
+        $server = server::find(1);
+
+        return view('welcome', compact('users', 'server'));
     }
     public function LoginView()
     {
