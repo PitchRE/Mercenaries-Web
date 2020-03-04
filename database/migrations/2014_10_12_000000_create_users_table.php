@@ -49,6 +49,18 @@ class CreateUsersTable extends Migration
             $table->integer('Archery')->default(0);
             $table->integer('Throwing')->default(0);
             $table->integer('Firearms')->default(0);
+
+            $table->integer('head')->nullable();
+            $table->integer('body')->nullable();
+            $table->integer('gloves')->nullable();
+            $table->integer('boots')->nullable();
+            $table->integer('weapon_1')->nullable();
+            $table->integer('weapon_2')->nullable();
+            $table->integer('weapon_3')->nullable();
+            $table->integer('weapon_4')->nullable();
+
+            $table->integer('horse')->nullable();
+
         });
     }
 

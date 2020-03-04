@@ -62,7 +62,9 @@ class PagesController extends Controller
 
     public function inventory()
     {
-        return view('pages.inventory');
+        $user = Auth::user();
+
+        return view('pages.inventory', compact('user'));
     }
 
     public function stats()

@@ -82,8 +82,12 @@
                                 <p class="has-text-centered">{{$item->price}} <i class="fas fa-coins"></i></p>
                             </div>
                             <footer class="card-footer">
-                                <a href="#"
-                                    class="card-footer-item @if($user->gold < $item->price)has-background-danger is-disabled @else has-background-success @endif">Buy</a>
+                                @if($user->gold < $item->price)
+                                    <a class="card-footer-item has-background-danger is-disabled">Buy</a>
+                                    @else
+                                    <a href="{{route('buy-item', ['id' => '1'])}}"
+                                        class="card-footer-item has-background-success">Buy</a>
+                                    @endif
                             </footer>
                         </div>
                     </div>

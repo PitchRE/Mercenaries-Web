@@ -20,3 +20,9 @@ Route::GET('/marketplace', 'PagesController@marketplace')->name('marketplace');
 Route::GET('/inventory', 'PagesController@inventory')->name('inventory');
 Route::GET('/stats', 'PagesController@stats')->name('stats');
 Route::POST('/stats', 'UserController@save_stats')->name('post_stats');
+
+Route::GET('/item/buy/{id}', 'UserItemController@buy')->name('buy-item');
+
+Route::POST('/item/equip', 'UserItemController@equip')->name('equip-item');
+
+Route::GET('/item/unequip/{$id}', 'UserItemController@unequip')->name('unequip-item');
