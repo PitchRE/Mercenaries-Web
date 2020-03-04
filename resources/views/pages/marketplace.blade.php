@@ -4,7 +4,7 @@
     <section class="hero">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title has-text-centered">
+                <h1 class="title has-text-centered themeFont">
                     Marketplace
                 </h1>
                 <h1 class="subtitle has-text-centered">
@@ -72,11 +72,13 @@
                     <div class="column is-3 ">
                         <div class="card">
                             <header class="card-header">
-                                <span class="card-header-title">{{$item->name}}</span>
+                                <span class="card-header-title themeFont">{{$item->name}}</span>
                             </header>
                             <div class="card-content">
                                 <div class="content">
-                                    <img src="{{$item->image ?? "https://previews.123rf.com/images/abluecup/abluecup1309/abluecup130900082/22175873-a-3d-human-character-a-question-mark.jpg"}}"
+                                    <img style=" width:  150px;
+                                    height: 150px;"
+                                        src="{{$item->image ?? "https://previews.123rf.com/images/abluecup/abluecup1309/abluecup130900082/22175873-a-3d-human-character-a-question-mark.jpg"}}"
                                         alt="" srcset="" />
                                 </div>
                                 <p class="has-text-centered">{{$item->price}} <i class="fas fa-coins"></i></p>

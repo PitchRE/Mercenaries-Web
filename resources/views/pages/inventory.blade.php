@@ -4,7 +4,7 @@
     <section class="hero">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title has-text-centered">
+                <h1 class="title has-text-centered themeFont">
                     Inventory
                 </h1>
 
@@ -36,7 +36,7 @@
 
                 <div class="columns">
                     <div class="column is-2"
-                        style="background-color: rgba(81, 19, 180, 0.582); border: 4px solid white; border-radius: 1%; margin: 4;">
+                        style="background-color: rgba(253, 253, 253, 0.205); border: 4px solid white; border-radius: 1%; margin: 4;">
                         @include('pages.item_template', ['item' => $user->getHead()])
                         @include('pages.item_template', ['item' => $user->getBody()])
                         @include('pages.item_template', ['item' => $user->getGloves()])
@@ -44,7 +44,7 @@
                         @include('pages.item_template', ['item' => $user->getHorse()])
                     </div>
                     <div class="column box"
-                        style="background-color: rgba(150, 144, 140, 0.849); border: 4px solid white; border-radius: 1%;">
+                        style="background-color: rgba(253, 253, 253, 0.205); border: 4px solid white; border-radius: 1%;">
                         <div class="columns is-multiline">
                             @foreach ($user->items as $item)
                             @if(!$item->isEquiped())
@@ -52,7 +52,7 @@
 
                                 <div class="card">
                                     <header class="card-header">
-                                        <span class="card-header-title">{{$item->ItemData->name}} </span>
+                                        <span class="card-header-title themeFont">{{$item->ItemData->name}} </span>
                                     </header>
                                     <div class="card-content">
                                         <div class="content">
@@ -99,7 +99,7 @@
                             @endforeach </div>
                     </div>
                     <div class="column is-2"
-                        style="background-color: rgba(17, 89, 223, 0.726); border: 4px solid white; border-radius: 1%; margin: 4;">
+                        style="background-color: rgba(253, 253, 253, 0.205); border: 4px solid white; border-radius: 1%; margin: 4; ">
 
                         @include('pages.item_template', ['item' => $user->getWeapon1(), 'slot' => 1])
                         @include('pages.item_template', ['item' => $user->getWeapon2(), 'slot' => 2])

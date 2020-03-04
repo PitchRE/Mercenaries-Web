@@ -2,9 +2,9 @@ $footer-padding: 1.5rem 0.75rem 3rem !default; // Bulma footer size.
 @import "~bulma/bulma.sass";
 
 .is-disabled {
-    pointer-events: none;
     cursor: not-allowed;
-    opacity: 0.65;
+    pointer-events: all !important;
+    opacity: 1;
 }
 
 .GreenPlus {
@@ -18,4 +18,40 @@ $footer-padding: 1.5rem 0.75rem 3rem !default; // Bulma footer size.
 }
 .skillnames {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Trade+Winds&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+
+.themeFont {
+    font-family: "Trade Winds", curs;
+    color: orange;
+}
+
+.themeFontLight {
+    font-family: "Bree Serif", serif !important;
+    color: white !important;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url("/fonts/Futura Book font.ttf");
+}
+
+.themeText {
+    font-family: Futura;
+}
+
+.container-fluid {
+    background:
+        /* top, transparent black, faked with gradient */ linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */ url("/img/wallpaper.jpg") no-repeat center center
+            fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

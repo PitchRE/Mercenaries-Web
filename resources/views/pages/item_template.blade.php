@@ -1,7 +1,7 @@
 @if($item != null)
 <div class="card">
     <header class="card-header">
-        <span class="card-header-title">{{$item->name}}</span>
+        <span class="card-header-title themeFont">{{$item->name}}</span>
     </header>
     <div class="card-content">
         <div class="content">
@@ -11,14 +11,16 @@
     </div>
     <footer class="card-footer">
         <a href="{{route('unequip-item', ['id' => $item->id, 'slot' => $slot ?? null])}}"
-            class="card-footer-item  button is-danger is-outlined">Unequip <span class="icon is-small">
+            class="card-footer-item  button   themeFontLight "
+            style="background-color: orange; border: 2px solid white">Unequip
+            <span class="icon is-small">
             </span></a>
     </footer>
 </div>
 @else
 <div class="card">
     <header class="card-header">
-        <span class="card-header-title">None</span>
+        <span class="card-header-title themeFont">None</span>
     </header>
     <div class="card-content">
         <div class="content">

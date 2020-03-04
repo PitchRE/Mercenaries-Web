@@ -13,44 +13,44 @@
 </head>
 
 <body>
-    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top is-black" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
-                <img src="{{ asset('img/Tiger.png') }}" height="50" />
-            </a>
+                <h1 class="title has-text-centered themeFont">
+                    Mercenaries
+                </h1>
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </<span>
         </div>
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a href="/" class="navbar-item">
-                    Home
-                </a>
 
-                <a class="navbar-item">
+
+                <a class="navbar-item themeFont">
                     Changelog
                 </a>
 
                 @auth
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
+                    <a class="navbar-link themeFont">
                         Character
                     </a>
 
                     <div class="navbar-dropdown">
-                        <a href="{{route('marketplace')}}" class="navbar-item">
+                        <a href="{{route('marketplace')}}" class="navbar-item themeFont">
                             Marketplace
                         </a>
-                        <a href="{{route('inventory')}}" class="navbar-item">
+                        <a href="{{route('inventory')}}" class="navbar-item themeFont">
                             Inventory
                         </a>
-                        <a href="{{route('stats')}}" class="navbar-item">
+                        <a href="{{route('stats')}}" class="navbar-item themeFont">
                             Statistics
                         </a>
                         {{-- <hr class="navbar-divider" />
@@ -67,7 +67,8 @@
                 <div class="navbar-item">
 
                     <div class="buttons">
-
+                        <a href="https://github.com/PitchRE/Mercenaries" class="tag is-warning">0.3.1b [1d ago]</a>
+                        &nbsp;
                         @auth
                         <a href="{{ route('logout') }}" class="button is-light">
                             Logout
@@ -89,13 +90,13 @@
 
     @yield('content')
 
-    <footer class="footer">
+    {{-- <footer class="footer">
         <div class="content has-text-centered">
             <p>
                 <strong>Mercenaries</strong> by Pitch.
             </p>
         </div>
-    </footer>
+    </footer> --}}
 
     <script src="{{ asset('js/app.js') }}"></script>
 

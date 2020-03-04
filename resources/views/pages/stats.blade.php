@@ -1,10 +1,10 @@
 @extends('layout.app') @section('content')
 
-<div class="container-fluid has-background-warning" style="min-height: 100vh;">
+<div class="container-fluid has-background-warning themeFontLight" style="min-height: 100vh;">
     <section class="hero">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title has-text-centered">
+                <h1 class="title has-text-centered themeFont">
                     {{$user->name}}
                 </h1>
                 <div class="columns">
@@ -25,11 +25,11 @@
         </div>
     </section>
 
-    <div class="container">
-        <h1 class="subtitle has-text-centered" style="font-size: 1rem;">
+    <div class="container ">
+        <h1 class="subtitle has-text-centered themeFont" style="font-size: 1rem;">
             Skills
         </h1>
-        <div class="columns">
+        <div class="columns" style="background-color: rgba(255, 255, 255, 0.116)">
             <div class="column is-2"></div>
             <div class="column is-2"></div>
             <div class="column is-2">Ironflesh</div>
@@ -108,7 +108,7 @@
                     class="fas fa-plus GreenPlus"></span>
             </div>
         </div>
-        <div class="columns skillnames">
+        <div class="columns ">
             <div class="column is-2">STR</div>
             <div class="column is-2">
                 <span id="STR">{{$user->strength}} </span><span id="STRPlus" onclick="add('STR')"
@@ -125,7 +125,7 @@
                     class="fas fa-plus GreenPlus"></span>
             </div>
         </div>
-        <div class="columns skillnames">
+        <div class="columns ">
             <div class="column is-2">AGI</div>
             <div class="column is-2">
                 <span id="AGI">{{$user->agility}} </span><span id="AGIPlus" onclick="add('AGI')"
@@ -143,23 +143,25 @@
             </div>
         </div>
         <div class="columns freepoints">
-            <div class="column is-2 FreeAtributes">Atribute points:</div>
-            <div class="column is-2">
-                <span id="atributesSpan" class="FreeAtributes">0</span>
+            <div class="column is-2 FreeAtributes themeFont">
+                Atribute points:
             </div>
-            <div class="column is-2 FreeSkills">Skill points:</div>
+            <div class="column is-2">
+                <span id="atributesSpan" class="FreeAtributes themeFont">0</span>
+            </div>
+            <div class="column is-2 FreeSkills themeFont">Skill points:</div>
             <div class="column is-2 ">
-                <span id="skillsSpan" class="FreeSkills">0</span>
+                <span id="skillsSpan" class="FreeSkills themeFont">0</span>
             </div>
-            <div class="column is-2 FreeProfi">Weapon points:</div>
+            <div class="column is-2 FreeProfi themeFont">Weapon points:</div>
             <div class="column is-2">
-                <span id="profiSpan" class="FreeProfi">0</span>
+                <span id="profiSpan" class="FreeProfi themeFont">0</span>
             </div>
         </div>
 
         <div class="columns">
             <div class="column is-2 ">
-                <button onclick="ResetPoints()" class="button is-info">
+                <button onclick="ResetPoints()" class="button is-info themeFont" style="background-color: orange">
                     Reset points
                 </button>
             </div>
@@ -171,7 +173,8 @@
                 <form action="{{ route('post_stats') }}" method="POST" id="myForm">
                     @csrf
                     <input type="hidden" name="data" id="data_form" />
-                    <input type="submit" class="button is-danger is-rounded" value="Save" />
+                    <input type="submit" class="button is-danger is-rounded themeFont" style="background-color: orange"
+                        value="Save" />
                 </form>
             </div>
         </div>
