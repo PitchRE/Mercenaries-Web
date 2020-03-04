@@ -100,10 +100,10 @@
                     <div class="column is-2"
                         style="background-color: rgba(17, 89, 223, 0.726); border: 4px solid white; border-radius: 1%; margin: 4;">
 
-                        @include('pages.item_template', ['item' => $user->getWeapon1()])
-                        @include('pages.item_template', ['item' => $user->getWeapon2()])
-                        @include('pages.item_template', ['item' => $user->getWeapon3()])
-                        @include('pages.item_template', ['item' => $user->getWeapon4()])
+                        @include('pages.item_template', ['item' => $user->getWeapon1(), 'slot' => 1])
+                        @include('pages.item_template', ['item' => $user->getWeapon2(), 'slot' => 2])
+                        @include('pages.item_template', ['item' => $user->getWeapon3(), 'slot' => 3])
+                        @include('pages.item_template', ['item' => $user->getWeapon4(), 'slot' => 4])
 
                     </div>
                 </div>

@@ -25,4 +25,4 @@ Route::GET('/item/buy/{id}', 'UserItemController@buy')->name('buy-item');
 
 Route::POST('/item/equip', 'UserItemController@equip')->name('equip-item');
 
-Route::GET('/item/unequip/{$id}', 'UserItemController@unequip')->name('unequip-item');
+Route::GET('/item/unequip', 'UserItemController@unequip')->name('unequip-item');

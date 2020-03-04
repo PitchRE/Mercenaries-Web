@@ -10,8 +10,8 @@
 
     </div>
     <footer class="card-footer">
-        <a href="{{route('unequip-item')}}" class="card-footer-item  button is-danger is-outlined">Unequip <span
-                class="icon is-small">
+        <a href="{{route('unequip-item', ['id' => $item->id, 'slot' => $slot ?? null])}}"
+            class="card-footer-item  button is-danger is-outlined">Unequip <span class="icon is-small">
             </span></a>
     </footer>
 </div>
