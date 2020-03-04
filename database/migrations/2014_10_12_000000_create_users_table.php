@@ -26,7 +26,7 @@ class CreateUsersTable extends Migration
             $table->integer('exp_next_level')->default(50);
             $table->integer('level')->default(1);
             $table->string('secret_key')->default(0);
-            $table->string('unique_id')->default(0);
+            $table->string('unique_id')->unique();
             $table->integer('kills')->default(0);
             $table->integer('deaths')->default(0);
             $table->bigInteger('gold')->default(200);

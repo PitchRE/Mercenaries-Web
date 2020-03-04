@@ -5,7 +5,7 @@
         <div class="hero-body">
             <div class="container">
                 <h1 class="title has-text-centered">
-                    Character name
+                    {{$user->name}}
                 </h1>
                 <div class="columns">
                     <div class="column is-2 "></div>
@@ -35,11 +35,7 @@
             <div class="column is-2">Ironflesh</div>
             <div class="column is-2">
                 <span id="Ironflesh">{{$user->Ironflesh}}</span>
-                <span
-                    id="IronfleshPlus"
-                    onclick="add('Ironflesh')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="IronfleshPlus" onclick="add('Ironflesh')" class="fas fa-plus GreenPlus"></span>
             </div>
             <div class="column is-2"></div>
             <div class="column is-2"></div>
@@ -49,13 +45,9 @@
             <div class="column is-2"></div>
             <div class="column is-2">Shooting from Horseback</div>
             <div class="column is-2">
-                <span id="Shooting_from_Horseback"
-                    >{{$user->Shooting_from_Horseback}} </span
-                ><span
-                    id="Shooting_from_HorsebackPlus"
-                    onclick="add('Shooting_from_Horseback')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Shooting_from_Horseback">{{$user->Shooting_from_Horseback}} </span><span
+                    id="Shooting_from_HorsebackPlus" onclick="add('Shooting_from_Horseback')"
+                    class="fas fa-plus GreenPlus"></span>
             </div>
             <div class="column is-2"></div>
             <div class="column is-2"></div>
@@ -65,21 +57,13 @@
             <div class="column is-2"></div>
             <div class="column is-2">Power Strike</div>
             <div class="column is-2">
-                <span id="Power_Strike">{{$user->PowerStrike}} </span
-                ><span
-                    id="Power_StrikePlus"
-                    onclick="add('Power_Strike')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Power_Strike">{{$user->PowerStrike}} </span><span id="Power_StrikePlus"
+                    onclick="add('Power_Strike')" class="fas fa-plus GreenPlus"></span>
             </div>
             <div class="column is-2">One Handed Weapons</div>
             <div class="column is-2">
-                <span id="One_Handed_Weapons">{{$user->OneHanded}} </span
-                ><span
-                    id="One_Handed_WeaponsPlus"
-                    onclick="add('One_Handed_Weapons')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="One_Handed_Weapons">{{$user->OneHanded}} </span><span id="One_Handed_WeaponsPlus"
+                    onclick="add('One_Handed_Weapons')" class="fas fa-plus GreenPlus"></span>
             </div>
         </div>
         <div class="columns">
@@ -87,21 +71,13 @@
             <div class="column is-2"></div>
             <div class="column is-2">Grenade Throwing</div>
             <div class="column is-2">
-                <span id="Grenade_Throwing">{{$user->PowerThrow}} </span
-                ><span
-                    id="Grenade_ThrowingPlus"
-                    onclick="add('Grenade_Throwing')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Grenade_Throwing">{{$user->PowerThrow}} </span><span id="Grenade_ThrowingPlus"
+                    onclick="add('Grenade_Throwing')" class="fas fa-plus GreenPlus"></span>
             </div>
             <div class="column is-2">Two Handed Weapons</div>
             <div class="column is-2">
-                <span id="Two_Handed_Weapons">{{$user->TwoHanded}} </span
-                ><span
-                    id="Two_Handed_WeaponsPlus"
-                    onclick="add('Two_Handed_Weapons')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Two_Handed_Weapons">{{$user->TwoHanded}} </span><span id="Two_Handed_WeaponsPlus"
+                    onclick="add('Two_Handed_Weapons')" class="fas fa-plus GreenPlus"></span>
             </div>
         </div>
         <div class="columns">
@@ -109,21 +85,13 @@
             <div class="column is-2"></div>
             <div class="column is-2">Power Draw</div>
             <div class="column is-2">
-                <span id="Power_Draw">{{$user->PowerDraw}} </span
-                ><span
-                    id="Power_DrawPlus"
-                    onclick="add('Power_Draw')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Power_Draw">{{$user->PowerDraw}} </span><span id="Power_DrawPlus" onclick="add('Power_Draw')"
+                    class="fas fa-plus GreenPlus"></span>
             </div>
             <div class="column is-2">Polearms</div>
             <div class="column is-2">
-                <span id="Polearms">{{$user->Polearms}} </span
-                ><span
-                    id="PolearmsPlus"
-                    onclick="add('Polearms')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Polearms">{{$user->Polearms}} </span><span id="PolearmsPlus" onclick="add('Polearms')"
+                    class="fas fa-plus GreenPlus"></span>
             </div>
         </div>
         <div class="columns">
@@ -131,79 +99,47 @@
             <div class="column is-2"></div>
             <div class="column is-2">Shield</div>
             <div class="column is-2">
-                <span id="Shield">{{$user->Shield}} </span
-                ><span
-                    id="ShieldPlus"
-                    onclick="add('Shield')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Shield">{{$user->Shield}} </span><span id="ShieldPlus" onclick="add('Shield')"
+                    class="fas fa-plus GreenPlus"></span>
             </div>
             <div class="column is-2">Archery</div>
             <div class="column is-2">
-                <span id="Archery">{{$user->Archery}} </span
-                ><span
-                    id="ArcheryPlus"
-                    onclick="add('Archery')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Archery">{{$user->Archery}} </span><span id="ArcheryPlus" onclick="add('Archery')"
+                    class="fas fa-plus GreenPlus"></span>
             </div>
         </div>
         <div class="columns skillnames">
             <div class="column is-2">STR</div>
             <div class="column is-2">
-                <span id="STR">{{$user->strength}} </span
-                ><span
-                    id="STRPlus"
-                    onclick="add('STR')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="STR">{{$user->strength}} </span><span id="STRPlus" onclick="add('STR')"
+                    class="fas fa-plus GreenPlus"></span>
             </div>
             <div class="column is-2">Athletics</div>
             <div class="column is-2">
-                <span id="Athletics">{{$user->Athletics}} </span
-                ><span
-                    id="AthleticsPlus"
-                    onclick="add('Athletics')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Athletics">{{$user->Athletics}} </span><span id="AthleticsPlus" onclick="add('Athletics')"
+                    class="fas fa-plus GreenPlus"></span>
             </div>
             <div class="column is-2">Firearms</div>
             <div class="column is-2">
-                <span id="Firearms">{{$user->Firearms}} </span
-                ><span
-                    id="FirearmsPlus"
-                    onclick="add('Firearms')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Firearms">{{$user->Firearms}} </span><span id="FirearmsPlus" onclick="add('Firearms')"
+                    class="fas fa-plus GreenPlus"></span>
             </div>
         </div>
         <div class="columns skillnames">
             <div class="column is-2">AGI</div>
             <div class="column is-2">
-                <span id="AGI">{{$user->agility}} </span
-                ><span
-                    id="AGIPlus"
-                    onclick="add('AGI')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="AGI">{{$user->agility}} </span><span id="AGIPlus" onclick="add('AGI')"
+                    class="fas fa-plus GreenPlus"></span>
             </div>
             <div class="column is-2">Riding</div>
             <div class="column is-2">
-                <span id="Riding">{{$user->Riding}} </span
-                ><span
-                    id="RidingPlus"
-                    onclick="add('Riding')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="Riding">{{$user->Riding}} </span><span id="RidingPlus" onclick="add('Riding')"
+                    class="fas fa-plus GreenPlus"></span>
             </div>
             <div class="column is-2">Throwing</div>
             <div class="column is-2">
                 <span id="Throwing">{{$user->Throwing}}</span>
-                <span
-                    id="ThrowingPlus"
-                    onclick="add('Throwing')"
-                    class="fas fa-plus GreenPlus"
-                ></span>
+                <span id="ThrowingPlus" onclick="add('Throwing')" class="fas fa-plus GreenPlus"></span>
             </div>
         </div>
         <div class="columns freepoints">
@@ -232,18 +168,10 @@
             <div class="column is-2 "></div>
             <div class="column is-2"></div>
             <div class="column is-2">
-                <form
-                    action="{{ route('post_stats') }}"
-                    method="POST"
-                    id="myForm"
-                >
+                <form action="{{ route('post_stats') }}" method="POST" id="myForm">
                     @csrf
                     <input type="hidden" name="data" id="data_form" />
-                    <input
-                        type="submit"
-                        class="button is-danger is-rounded"
-                        value="Save"
-                    />
+                    <input type="submit" class="button is-danger is-rounded" value="Save" />
                 </form>
             </div>
         </div>
@@ -251,7 +179,7 @@
 </div>
 <style></style>
 <script>
-        var Profi = [
+    var Profi = [
             "Throwing",
             "Firearms",
             "Archery",

@@ -13,7 +13,7 @@ class AuthController extends Controller
     {
         // validate the info, create rules for the Requests
         $rules = array(
-            'email' => 'required|email', // make sure the email is an actual email
+            'unique_id' => 'required|numeric|min:3', // make sure the unique_id is an actual unique_id
             'password' => 'required|alphaNum|min:3', // password can only be alphanumeric and has to be greater than 3 characters
         );
 
@@ -30,7 +30,7 @@ class AuthController extends Controller
 
             // create our user data for the authentication
             $userdata = array(
-                'email' => Request::get('email'),
+                'unique_id' => Request::get('unique_id'),
                 'password' => Request::get('password'),
             );
 
@@ -47,7 +47,7 @@ class AuthController extends Controller
             } else {
 
                 // validation not successful, send back to form
-                return Redirect::to('login')->withErrors("We do not have record with this email and password.");
+                return Redirect::to('login')->withErrors("We do not have record with this UID and password.");
 
             }
         }}

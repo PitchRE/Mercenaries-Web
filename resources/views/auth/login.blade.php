@@ -17,10 +17,10 @@
                         @csrf
 
                         <div class="field">
-                            <label for="" class="label">Email</label>
+                            <label for="" class="label"> UID</label>
                             <div class="control has-icons-left">
-                                <input type="email" placeholder="e.g. bobsmith@gmail.com" class="input"
-                                    value="{{ request('email') }}" name="email" required>
+                                <input type="text" placeholder="553411" class="input" value="{{ request('unique_id') }}"
+                                    name="unique_id" required>
                                 <span class="icon is-small is-left">
                                     <i class="fa fa-envelope"></i>
                                 </span>
