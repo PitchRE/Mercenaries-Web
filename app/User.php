@@ -171,5 +171,10 @@ class User extends Authenticatable
         $item = UserItem::find($this->boots);
         return $item->ItemData ?? null;
     }
+    public function getHorse()
+    {
+        $item = UserItem::find($this->horse);
+        return $item->ItemData ?? null;
+    }
 
 }

@@ -43,7 +43,7 @@ class CreateUsersTable extends Migration
             $table->integer('Athletics')->default(0);
             $table->integer('Riding')->default(0);
 
-            $table->integer('OneHanded')->default(20);
+            $table->integer('OneHanded')->default(0);
             $table->integer('TwoHanded')->default(0);
             $table->integer('Polearms')->default(0);
             $table->integer('Archery')->default(0);

@@ -41,5 +41,11 @@ class UserItemSeeder extends Seeder
             'item_id' => 5,
 
         ]);
+        DB::table('user_items')->insert([
+
+            'user_id' => 1,
+            'item_id' => 6,
+
+        ]);
     }
 }

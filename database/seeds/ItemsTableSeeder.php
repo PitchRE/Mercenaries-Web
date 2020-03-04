@@ -51,5 +51,14 @@ class ItemsTableSeeder extends Seeder
             'image' => "https://static.turbosquid.com/Preview/001286/418/KB/_Z.jpg",
             'price' => 750,
         ]);
+
+        DB::table('items')->insert([
+            'name' => "Horse",
+            'type' => "itp_type_horse",
+            'code_name' => "itm_knight_armor",
+            'game_id' => 111,
+            'image' => "https://animavet.pl/media/products/5367898ede28dd50ec57a268d4c05fae/images/thumbnail/large_177.jpg?lm=1555607107",
+            'price' => 750,
+        ]);
     }
 }

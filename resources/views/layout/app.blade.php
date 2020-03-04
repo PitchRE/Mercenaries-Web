@@ -53,10 +53,10 @@
                         <a href="{{route('stats')}}" class="navbar-item">
                             Statistics
                         </a>
-                        <hr class="navbar-divider" />
+                        {{-- <hr class="navbar-divider" />
                         <a class="navbar-item">
                             Report an issue
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
                 @endauth
@@ -92,7 +92,7 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
-                <strong>Mercenaries</strong> by <a href="https://pitchblack.eu">Pitch</a>.
+                <strong>Mercenaries</strong> by Pitch.
             </p>
         </div>
     </footer>

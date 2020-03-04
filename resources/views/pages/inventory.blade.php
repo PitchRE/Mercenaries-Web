@@ -41,6 +41,7 @@
                         @include('pages.item_template', ['item' => $user->getBody()])
                         @include('pages.item_template', ['item' => $user->getGloves()])
                         @include('pages.item_template', ['item' => $user->getBoots()])
+                        @include('pages.item_template', ['item' => $user->getHorse()])
                     </div>
                     <div class="column box"
                         style="background-color: rgba(150, 144, 140, 0.849); border: 4px solid white; border-radius: 1%;">
