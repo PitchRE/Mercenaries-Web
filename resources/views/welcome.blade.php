@@ -1,5 +1,8 @@
 @extends('layout.app') @section('content')
+<head>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
 <div class="container-fluid " style="min-height: 100vh;">
     <section class="hero">
         <div class="hero-body">
@@ -61,6 +64,11 @@
                     be enriched by new abilities, achievements, maps, rating,
                     clan system and many other features
                 </h2>
+
+                <div class="notification is-success">
+                  
+                    Notification: Rewards are doubled every day between 17:00 and 18:00 UTC!
+                  </div>
             </div>
         </div>
     </section>
@@ -69,7 +77,7 @@
 
   <div class="bgimg-2">
     <div class="">
-      <div data-aos="zoom-in-up"></div>
+        <canvas id="myChart" height="100" style="padding-top:  5vh;"></canvas>
     </div>
   </div>
 
@@ -96,6 +104,7 @@
   </li>
   <li>On your next re-joining, your credentials will be printed.</li>
   <br />
+
   </div>
   <div class="column">
     <h1 class="is-5 title">Installation Requirements</h1>
@@ -145,9 +154,6 @@
 </div>
 
 </div>
-
-
-</script>
 
 
 
@@ -225,3 +231,37 @@ h3 {
   }
 }
 </style>
+
+<style>
+
+ .sasdaad{
+    background-color: rgba(214, 158, 52, 0.1)
+ }
+</style>
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    let chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        datasets: [{
+            label: 'Players [WIP]',
+            data: [12, 20, 40, 35],
+            backgroundColor: 'rgba(214, 158, 52, 0.5)',
+            fontColor: 'orange',
+        }],
+        labels: ['8:00', '12:00', '16:00', '20:00']
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    suggestedMin: 0,
+                    suggestedMax: 64,
+                    fontSize: 15,
+                }
+            }]
+        }
+    }
+});
+</script>
