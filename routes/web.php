@@ -26,3 +26,9 @@ Route::GET('/item/buy/{id}', 'UserItemController@buy')->name('buy-item');
 Route::POST('/item/equip', 'UserItemController@equip')->name('equip-item');
 
 Route::GET('/item/unequip', 'UserItemController@unequip')->name('unequip-item');
+
+/// Warband
+
+Route::get('/checkplayer', 'WarbandController@checkplayer');
+Route::get('/GiveEXP', 'WarbandController@GiveEXP');
+Route::get('/GiveEarnings', 'WarbandController@GiveEarnings');
