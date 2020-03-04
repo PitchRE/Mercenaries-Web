@@ -22,6 +22,7 @@ class ServerTableSeeder extends Seeder
             'fog' => 0,
             'weather' => 0,
             'ip' => '127.0.0.1:7240',
+            'status' => 'Online',
 
         ]);
     }
