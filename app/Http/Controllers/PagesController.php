@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Item;
+use App\kd_history;
 use App\server;
 use App\User;
 use Auth;
@@ -91,7 +92,14 @@ class PagesController extends Controller
             return redirect()->route('login_show');
 
         }
-        return view('pages.profile', compact('user'));
+        $kd_history = kd_history::take(5)->get();
+
+        $lowest = $kd_history->sortBy('kd')->values()->first();
+        $highest = $kd_history->sortByDesc('kd')->values()->first();
+        $lowest = $lowest->kd;
+        $highest = $highest->kd;
+
+        return view('pages.profile', compact('user', 'kd_history', 'lowest', 'highest'));
     }
 
 }

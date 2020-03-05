@@ -10,21 +10,17 @@
                 <div class="column is-6 ">
                     <div class="item">
                         <a href="#">
-                            <span
-                                class="tag is-white lvl-badge"
-                                >{{$user->level}}</span
-                            >
-                            <img
-                                src="https://static.smite.guru/i/avatars/0.png"
-                                alt=""
-                            />
+                            <span class="tag is-white lvl-badge">{{$user->level}}</span>
+                            <img src="https://static.smite.guru/i/avatars/0.png" alt="" />
                         </a>
                     </div>
                 </div>
+
                 &nbsp;
                 <span class="flag-icon flag-icon-eu flag-icon-squared"></span>
-                <span style="text-align: right" class="themeFont"
-                    >{{$user->name}}
+                <span style="text-align: right" class="themeFont">{{$user->name}} <br><span class="themeFontLight"> Free
+                        Agent
+                    </span>
                 </span>
             </div>
             <div class="column"></div>
@@ -37,10 +33,7 @@
             <nav class="tabs is-centered is-boxed">
                 <div class="container">
                     <ul>
-                        <li
-                            class="tab is-selected"
-                            onclick="openTab(event,'Summary')"
-                        >
+                        <li class="tab is-selected" onclick="openTab(event,'Summary')">
                             <a>Summary</a>
                         </li>
                         <li class="tab" onclick="openTab(event,'Ranked')">
@@ -58,15 +51,8 @@
             <div id="Summary" class="content-tab">
                 <div class="columns">
                     <div class="column is-3">
-                        <table
-                            class="table"
-                            style="width: 100%; background-color: rgba(255, 255, 255, 0.13);"
-                        >
-                            <span
-                                class="tag is-black"
-                                style="width: 100%; text-align: left;"
-                                >Player Stats</span
-                            >
+                        <table class="table" style="width: 100%; background-color: rgba(255, 255, 255, 0.13);">
+                            <span class="tag is-black" style="width: 100%; text-align: left;">Player Stats</span>
 
                             <tbody>
                                 <tr>
@@ -119,10 +105,7 @@
                     </div>
 
                     <div class="column">
-                        <canvas
-                            id="myChart"
-                            style="width: 100%; background-color: rgba(255, 255, 255, 0.13);"
-                        ></canvas>
+                        <canvas id="myChart" style="width: 100%; background-color: rgba(255, 255, 255, 0.13);"></canvas>
                     </div>
                 </div>
             </div>
@@ -145,6 +128,7 @@
             padding-top: 20px;
             display: inline-block;
         }
+
         .lvl-badge {
             width: 30%;
             position: absolute;
@@ -152,6 +136,7 @@
             right: 0;
             border-radius: 0px !important;
         }
+
         .is-selected {
             background-color: orange !important;
             color: black !important;
@@ -166,21 +151,21 @@
         data: {
             datasets: [
                 {
-                    label: "KDA",
-                    data: [2.3, 2.8, 1.8, 2.4],
+                    label: "KD",
+                    data: [{!! $kd_history[4]->kd ?? 0 !!}, {!!$kd_history[3]->kd ?? 0 !!}, {!!$kd_history[2]->kd ?? 0 !!}, {!!$kd_history[1]->kd ?? 0 !!}, {!!$kd_history[0]->kd ?? 0 !!}],
                     backgroundColor: "rgba(214, 158, 52, 0.5)",
                     fontColor: "orange"
                 }
             ],
-            labels: ["8:00", "12:00", "16:00", "20:00"]
+            labels: ["{!! $kd_history[4]->created_at->diffForHumans() !!}", "{!! $kd_history[3]->created_at->diffForHumans() !!}", "{!! $kd_history[2]->created_at->diffForHumans() !!}", "{!! $kd_history[1]->created_at->diffForHumans() !!}", "{!! $kd_history[0]->created_at->diffForHumans() !!}"]
         },
         options: {
             scales: {
                 yAxes: [
                     {
                         ticks: {
-                            suggestedMin: 0,
-                            suggestedMax: 5,
+                            suggestedMin: {!! $lowest !!},
+                            suggestedMax: {!! $highest !!},
                             fontSize: 15
                         }
                     }

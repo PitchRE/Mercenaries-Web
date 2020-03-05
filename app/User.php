@@ -93,6 +93,10 @@ class User extends Authenticatable
         'name', 'email', 'password', 'unique_id',
     ];
 
+    protected $dispatchesEvents = [
+        'created' => Events\UserCreated::class,
+    ];
+
     /**
      * The attributes that should be hidden for arrays.
      *
