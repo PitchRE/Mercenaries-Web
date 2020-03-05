@@ -7,8 +7,8 @@
                 <h1 class="title has-text-centered themeFont">
                     Marketplace
                 </h1>
-                <h1 class="subtitle has-text-centered">
-                    {{$user->gold}} <i class="fas fa-coins"></i>
+                <h1 class="subtitle has-text-centered themeFontLight">
+                    {{$user->gold}} <i class="fas fa-coins" style="color: gold"></i>
                 </h1>
             </div>
         </div>
@@ -81,7 +81,8 @@
                                         src="{{$item->image ?? "https://previews.123rf.com/images/abluecup/abluecup1309/abluecup130900082/22175873-a-3d-human-character-a-question-mark.jpg"}}"
                                         alt="" srcset="" />
                                 </div>
-                                <p class="has-text-centered">{{$item->price}} <i class="fas fa-coins"></i></p>
+                                <p class="has-text-centered">{{$item->price}} <i class="fas fa-coins"
+                                        style="color: gold"></i></p>
                             </div>
                             <footer class="card-footer">
                                 @if($user->gold < $item->price)

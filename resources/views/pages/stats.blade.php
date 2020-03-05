@@ -16,14 +16,20 @@
                         <p class="has-text-right">
                             Next level at: {{$user->exp_next_level}}
                         </p>
+
                     </div>
+
                     <div class="column is-2"></div>
                     <div class="column is-2"></div>
                     <div class="column is-2"></div>
                 </div>
+
             </div>
+
         </div>
+
     </section>
+
 
     <div class="container ">
         <h1 class="subtitle has-text-centered themeFont" style="font-size: 1rem;">
