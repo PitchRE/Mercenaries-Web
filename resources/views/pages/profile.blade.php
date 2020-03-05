@@ -62,13 +62,13 @@
             <nav class="tabs is-centered is-boxed">
                 <div class="container">
                     <ul>
-                        <li class="tab is-selected" onclick="openTab(event,'Summary')">
+                        <li class="tab is-selected" style="background-color: white" onclick="openTab(event,'Summary')">
                             <a>Summary</a>
                         </li>
-                        <li class="tab" onclick="openTab(event,'Ranked')">
+                        <li class="tab" style="background-color: white" onclick="openTab(event,'Ranked')">
                             <a>Ranked</a>
                         </li>
-                        <li class="tab" onclick="openTab(event,'Casual')">
+                        <li class="tab" style="background-color: white" onclick="openTab(event,'Casual')">
                             <a>Casual</a>
                         </li>
                     </ul>

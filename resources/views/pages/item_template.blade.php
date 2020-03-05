@@ -35,18 +35,3 @@
 
 @endif
 <br>
-
-<style>
-    .container-fluid {
-        background:
-            /* top, transparent black, faked with gradient */
-            linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
-            /* bottom, image */
-            url("/img/wallpaper.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-</style>

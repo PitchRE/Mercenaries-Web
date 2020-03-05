@@ -5,22 +5,16 @@
     <style>
         .container-fluid {
             background:
-                /* top, transparent black, faked with gradient */
-                linear-gradient(rgba(0, 0, 0, 0.7),
-                rgba(0, 0, 0, 0.7)),
+
                 /* bottom, image */
-                url("/img/wallpaper.jpg") no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+                url("/img/main.webp")
         }
     </style>
 
 </head>
 
 
-<div class="container-fluid has-background-warning themeFontLight" style="min-height: 100vh;">
+<div class="container-fluid has-background-warning themeFontDark" style="min-height: 100vh;">
     <section class="hero">
         <div class="hero-body">
             <div class="container">
@@ -52,7 +46,7 @@
 
 
     <div class="container ">
-        <h1 class="subtitle has-text-centered themeFont" style="font-size: 1rem;">
+        <h1 class="subtitle has-text-centered themeFont" style="font-size: 1.6rem;">
             Skills
         </h1>
         <div class="columns" style="background-color: rgba(255, 255, 255, 0.116)">
