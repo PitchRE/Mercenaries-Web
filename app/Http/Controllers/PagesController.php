@@ -76,4 +76,22 @@ class PagesController extends Controller
         return view('pages.stats', compact('user'));
     }
 
+    public function profile($id = null)
+    {
+
+        if ($id != null) {
+            $user = User::find($id);
+            if ($user == null) {
+                return view('404')->withErrors('User not found.');
+            }
+        } else if (Auth::user() != null) {
+            $user = Auth::user();
+
+        } else {
+            return redirect()->route('login_show');
+
+        }
+        return view('pages.profile', compact('user'));
+    }
+
 }

@@ -160,4 +160,26 @@ class UserItemController extends Controller
         return redirect()->route('inventory')->with('success', ['Unequiped item']);
 
     }
+
+    public function sell($id)
+{
+        $user = Auth::user();
+        $user_item = UserItem::find($id);
+        if ($user_item == null) {
+            return view('404')->withErrors('Something went wrong.. Please report this. Reference: UserItemSell[1]');
+        }
+        if ($user_item->isEquiped() == true) {
+            return view('404')->withErrors('Something went wrong.. Please report this. Reference: UserItemSell[2]');
+        }
+        if ($user_item->user_id != $user->id) {
+            return view('404')->withErrors('Something went wrong.. Please report this. Reference: UserItemSell[3]');
+        }
+
+        $user->increment('gold', $user_item->ItemData->price * 0.75);
+        $profit = floor($user_item->ItemData->price * 0.75);
+        $user_item->delete();
+        $user->save();
+
+        return redirect()->route('inventory')->with('success', ["Sold {$user_item->ItemData->name} for {$profit}!"]);
+    }
 }

@@ -12014,6 +12014,11 @@ label.panel-block:hover {
   color: white !important;
 }
 
+.themeFontDark {
+  font-family: "Trade Winds", curs;
+  color: black;
+}
+
 @font-face {
   font-family: Futura;
   src: url("/fonts/Futura Book font.ttf");

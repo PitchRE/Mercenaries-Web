@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
         integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css"
+        integrity="sha256-YjcCvXkdRVOucibC9I4mBS41lXPrWfqY2BnpskhZPnw=" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -52,6 +53,9 @@
                         </a>
                         <a href="{{route('stats')}}" class="navbar-item themeFont">
                             Statistics
+                        </a>
+                        <a href="{{route('profile')}}" class="navbar-item themeFont">
+                            Profile
                         </a>
                         {{-- <hr class="navbar-divider" />
                         <a class="navbar-item">

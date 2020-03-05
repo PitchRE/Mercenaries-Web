@@ -47,6 +47,8 @@ class WarbandController extends Controller
     public function GiveEXP(Request $request)
     {
 
+        $RoundResult = $request->result ?? null;
+
         $expgive = $request->exp;
         $kills = $request->kills;
         $deaths = $request->deaths;
@@ -54,6 +56,14 @@ class WarbandController extends Controller
         $user = User::Where('unique_id', $guid)->first();
         if ($user == null) {
             return;
+        }
+        if ($result != null) {
+
+            if ($result == 0) {
+                $user->increment('rounds_lost');
+            } else {
+                $user->increment('rounds_won');
+            }
         }
 
         $exp = $user->exp;

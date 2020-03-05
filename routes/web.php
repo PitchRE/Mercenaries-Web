@@ -24,9 +24,13 @@ Route::group(['middleware' => 'auth'], function () {
     Route::GET('/item/buy/{id}', 'UserItemController@buy')->name('buy-item');
     Route::POST('/item/equip', 'UserItemController@equip')->name('equip-item');
     Route::GET('/item/unequip', 'UserItemController@unequip')->name('unequip-item');
+    Route::GET('/item/sell/{id}', 'UserItemController@sell')->name('sell-item');
     Route::get('/logout', 'AuthController@Logout')->name('logout');
 
 });
+
+Route::GET('/profile/{user?}', 'PagesController@profile')->name('profile');
+Route::GET('/404', 'PagesController@NotFound')->name('404');
 
 /// Warband
 

@@ -14,7 +14,7 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('id')->unsigned();
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
@@ -30,6 +30,8 @@ class CreateUsersTable extends Migration
             $table->integer('kills')->default(0);
             $table->integer('deaths')->default(0);
             $table->bigInteger('gold')->default(200);
+            $table->integer('rounds_won')->default(0);
+            $table->integer('rounds_lost')->default(0);
 
             $table->integer('strength')->default(0);
             $table->integer('agility')->default(0);

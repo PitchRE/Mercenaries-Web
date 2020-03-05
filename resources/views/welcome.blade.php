@@ -2,7 +2,7 @@
 
 <head>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
 </head>
 <div class="container-fluid ">
   <div class="bgimg-4">
@@ -241,34 +241,3 @@
     }
   }
 </style>
-
-
-
-<script>
-  var ctx = document.getElementById('myChart').getContext('2d');
-    let chart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        datasets: [{
-            label: 'Players [WIP]',
-            data: [12, 20, 40, 35],
-            backgroundColor: 'rgba(214, 158, 52, 0.5)',
-            fontColor: 'orange',
-        }],
-        labels: ['8:00', '12:00', '16:00', '20:00']
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    suggestedMin: 0,
-                    suggestedMax: 64,
-                    fontSize: 15,
-                }
-            }]
-        }
-    }
-});
-</script>
-
-{{-- <canvas id="myChart" height="100" style="padding-top:  5vh;"></canvas> --}}

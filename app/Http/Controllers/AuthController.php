@@ -22,7 +22,7 @@ class AuthController extends Controller
 
 // if the validator fails, redirect back to the form
         if ($validator->fails()) {
-            return Redirect::to('login')
+            return Redirect::to('login_show')
                 ->withErrors($validator) // send back all errors to the login form
                 ->withRequest(Request::except('password')); // send back the Request (not the password) so that we can repopulate the form
 
@@ -47,7 +47,7 @@ class AuthController extends Controller
             } else {
 
                 // validation not successful, send back to form
-                return Redirect::to('login')->withErrors("We do not have record with this UID and password.");
+                return Redirect::to('login_show')->withErrors("We do not have record with this UID and password.");
 
             }
         }}

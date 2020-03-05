@@ -14,7 +14,7 @@ class CreateItemsTable extends Migration
     public function up()
     {
         Schema::create('items', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('id')->unsigned();
             $table->bigInteger('game_id');
             $table->string('type');
             $table->string('name');
@@ -23,6 +23,7 @@ class CreateItemsTable extends Migration
             $table->text('image')->nullable();
             $table->timestamps();
         });
+
     }
 
     /**

@@ -60,7 +60,8 @@
                                                 height: 150px;" />
                                         </div>
                                         <p class="has-text-centered">
-                                            <a><i class="fas fa-hand-holding-usd is-dark"></i>
+                                            <a href="{{route('sell-item', ['id' => $item->id])}}"><i
+                                                    class="fas fa-hand-holding-usd is-dark"></i>
                                             </a>{{floor(($item->ItemData->price/4)*3)}} <i class="fas fa-coins"></i>
                                         </p>
                                     </div>
