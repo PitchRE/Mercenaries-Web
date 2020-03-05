@@ -35,8 +35,8 @@ class WarbandController extends Controller
             $boots = $user->getBoots() ?? 0;
             $horse = $user->getHorse() ?? 0;
 
-            $weapon_1 = $user->getWeapon1() ?? 0;
-            $weapon_2 = $user->getWeapon2() ?? 0;
+            $weapon_1 = $user->getWeapon1() ?? 429;
+            $weapon_2 = $user->getWeapon2() ?? 435;
             $weapon_3 = $user->getWeapon3() ?? 0;
             $weapon_4 = $user->getWeapon4() ?? 0;
 

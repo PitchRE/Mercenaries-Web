@@ -15,7 +15,7 @@ class CreateItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
-            $table->bigInteger('game_id');
+            $table->bigInteger('game_id')->unsigned();
             $table->string('type');
             $table->string('name');
             $table->string('code_name');
