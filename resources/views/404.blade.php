@@ -16,7 +16,7 @@
 
 <style>
     html {
-        background-image: url("{{asset('/img/campfire.jpeg')}}");
+        background-image: url("{{asset('/img/campfire.webp')}}");
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

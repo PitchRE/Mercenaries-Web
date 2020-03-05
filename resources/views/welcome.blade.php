@@ -183,19 +183,19 @@
   }
 
   .bgimg-2 {
-    background-image: url("{{asset('/img/warrior.jpeg')}}");
+    background-image: url("{{asset('/img/warrior.webp')}}");
     min-height: 600px;
   }
 
   .bgimg-4 {
-    background-image: url("{{asset('/img/mercenaries.jpeg')}}");
+    background-image: url("{{asset('/img/mercenaries.webp')}}");
 
 
     min-height: 100vh;
   }
 
   .bgimg-3 {
-    background-image: url("{{asset('/img/campfire.jpeg')}}");
+    background-image: url("{{asset('/img/campfire.webp')}}");
     min-height: 600px;
   }
 
