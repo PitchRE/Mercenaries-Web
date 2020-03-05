@@ -4,7 +4,7 @@
 <h1 class="title themeFont notFound">404 Not Found</h1>
 @if($errors->any())
 <div class="container" style="width: 50%;">
-    <div class="notification is-info notFound">
+    <div class="notification is-info ">
         {!! implode('', $errors->all('<div>:message</div>')) !!}
 
     </div>
@@ -32,3 +32,5 @@
         text-align: center;
     }
 </style>
+
+@endsection
