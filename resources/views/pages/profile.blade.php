@@ -1,6 +1,35 @@
 @extends('layout.app') @section('content')
 
 <head>
+    <style>
+        .item {
+            position: relative;
+            padding-top: 20px;
+            display: inline-block;
+        }
+
+        .lvl-badge {
+            width: 30%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 0px !important;
+        }
+
+        .is-selected {
+            background-color: orange !important;
+            color: black !important;
+        }
+
+
+        html {
+            background-image: url("{{asset('/img/campfire.jpeg')}}");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <div class="container" style="min-height: 100vh;">
@@ -18,8 +47,8 @@
 
                 &nbsp;
                 <span class="flag-icon flag-icon-eu flag-icon-squared"></span>
-                <span style="text-align: right" class="themeFont">{{$user->name}} <br><span class="themeFontLight"> Free
-                        Agent
+                <span style="text-align: right" class="themeFont">{{$user->name}} <br /><span class="themeFontLight">
+                        Free Agent
                     </span>
                 </span>
             </div>
@@ -122,26 +151,7 @@
         </div>
     </div>
 
-    <style>
-        .item {
-            position: relative;
-            padding-top: 20px;
-            display: inline-block;
-        }
 
-        .lvl-badge {
-            width: 30%;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            border-radius: 0px !important;
-        }
-
-        .is-selected {
-            background-color: orange !important;
-            color: black !important;
-        }
-    </style>
 </div>
 
 <script>
@@ -173,19 +183,8 @@
             }
         }
     });
-</script>
 
-<style>
-    html {
-        background-image: url("{{asset('/img/campfire.jpeg')}}");
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-</style>
 
-<script>
     function openTab(evt, tabName) {
         var i, x, tablinks;
         x = document.getElementsByClassName("content-tab");
@@ -203,3 +202,4 @@
         evt.currentTarget.className += " is-selected";
     }
 </script>
+@endsection

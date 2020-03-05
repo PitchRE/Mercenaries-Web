@@ -1,5 +1,22 @@
 @extends('layout.app') @section('content')
 
+<head>
+    <style>
+        .container-fluid {
+            background:
+                /* top, transparent black, faked with gradient */
+                linear-gradient(rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)),
+                /* bottom, image */
+                url("/img/wallpaper.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+
+</head>
 <div class="container-fluid has-background-warning" style="min-height: 100vh;">
     <section class="hero">
         <div class="hero-body">
@@ -102,3 +119,8 @@
         </div>
     </div>
 </div>
+
+
+
+
+@endsection

@@ -1,9 +1,6 @@
 @extends('layout.app') @section('content')
 
-<head>
 
-
-</head>
 <div class="container-fluid ">
   <div class="bgimg-4">
     <div style="padding-top: 25vh">
@@ -241,3 +238,5 @@
     }
   }
 </style>
+
+@endsection
