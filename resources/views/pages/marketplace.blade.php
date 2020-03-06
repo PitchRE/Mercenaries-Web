@@ -83,14 +83,17 @@
                     <div class="column is-3 ">
                         <div class="card">
                             <header class="card-header">
-                                <span class="card-header-title themeFont">{{$item->name}}</span>
+                                <span
+                                    class="card-header-title themeFont limit">{{ \Illuminate\Support\Str::limit($item->name, 22, '...')}}
+                                </span>
                             </header>
                             <div class="card-content">
-                                <div class="content">
-                                    <img style=" width:  150px;
-                                    height: 150px;"
-                                        src="{{$item->image ?? "https://previews.123rf.com/images/abluecup/abluecup1309/abluecup130900082/22175873-a-3d-human-character-a-question-mark.jpg"}}"
-                                        alt="" srcset="" />
+                                <div class="content  card-image">
+
+                                    <img src="
+                                        {{$item->image ?? "https://previews.123rf.com/images/abluecup/abluecup1309/abluecup130900082/22175873-a-3d-human-character-a-question-mark.jpg"}}"
+                                        alt="{{$item->name}}" srcset="" />
+
                                 </div>
                                 <p class="has-text-centered">{{$item->price}} <i class="fas fa-coins"
                                         style="color: gold"></i></p>
@@ -116,5 +119,10 @@
 
 
 
-
+<style>
+    .card .card-image,
+    .card .card-image .image img {
+        height: 200px;
+    }
+</style>
 @endsection

@@ -48,7 +48,7 @@ class UserController extends Controller
         $user->Throwing = $r->Throwing;
         $user->Firearms = $r->Firearms;
         $user->save();
-        return Redirect::to('/');
+        return Redirect::to('stats');
 
     }
 }
