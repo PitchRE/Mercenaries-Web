@@ -50,6 +50,10 @@ class UserItemController extends Controller
                 return redirect()->route('inventory')->withErrors('Internal error');
             }
 
+            if ($item->isEquiped() == true) {
+                return redirect()->route('inventory')->withErrors('Something went wrong...');
+            }
+
             switch ($request->slot) {
                 case '1':
                     $user->weapon_1 = $item->id;
@@ -109,6 +113,7 @@ class UserItemController extends Controller
         $item = UserItem::find($request->id);
 
         if ($item == null || $item->user_id != $user->id) {
+            dd($item);
             return redirect()->route('inventory')->withErrors('Internal error');
         }
 

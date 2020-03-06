@@ -12,53 +12,150 @@ class ItemsTableSeeder extends Seeder
     public function run()
     {
         DB::table('items')->insert([
-            'name' => "Knight Armor",
-            'type' => "itp_type_body_armor",
-            'code_name' => "itm_knight_armor",
-            'game_id' => 111,
-            'image' => "https://i.etsystatic.com/14134862/r/il/f8f064/1191420347/il_570xN.1191420347_lh4l.jpg",
+            'name' => "Solid Shield",
+            'type' => "itp_type_shield",
+            'code_name' => "round_shield_d",
+            'game_id' => 530,
+            'image' => "/storage/items/oim_shield_round_c.png",
             'price' => 750,
         ]);
         DB::table('items')->insert([
-            'name' => "pika",
-            'type' => "itp_type_polearm",
-            'code_name' => "itm_knight_armor",
-            'game_id' => 111,
-            'image' => "https://vignette.wikia.nocookie.net/elderscrolls/images/c/c8/Srebrna_w%C5%82%C3%B3cznia_%28Morrowind%29.png/revision/latest/top-crop/width/360/height/450?cb=20161031153100&path-prefix=pl",
+            'name' => "Good Pistol",
+            'type' => "itp_type_crossbow",
+            'code_name' => "good_pistol_c",
+            'game_id' => 612,
+            'image' => "/storage/items/pistol_rich_c.png",
             'price' => 750,
         ]);
         DB::table('items')->insert([
-            'name' => "knight boots",
-            'type' => "itp_type_foot_armor",
-            'code_name' => "itm_knight_armor",
-            'game_id' => 111,
-            'image' => "https://previews.123rf.com/images/vitaliygaydukov/vitaliygaydukov1706/vitaliygaydukov170600026/81281766-iron-fantasy-high-boots-knight-armor-isolated-on-white-background-3d-illustration.jpg",
-            'price' => 750,
-        ]);
-        DB::table('items')->insert([
-            'name' => "gloves",
-            'type' => "itp_type_hand_armor",
-            'code_name' => "itm_knight_armor",
-            'game_id' => 111,
-            'image' => "https://cdn11.bigcommerce.com/s-ejfi37frk5/images/stencil/1280x1280/products/11964/48375/lg112__37806.1516131067.jpg?c=2&imbypass=on",
-            'price' => 750,
-        ]);
-        DB::table('items')->insert([
-            'name' => "armet",
+            'name' => "Hussar Helmet With Crest",
             'type' => "itp_type_head_armor",
-            'code_name' => "itm_knight_armor",
-            'game_id' => 111,
-            'image' => "https://static.turbosquid.com/Preview/001286/418/KB/_Z.jpg",
+            'code_name' => "poland_gusar_helmet_greben",
+            'game_id' => 412,
+            'image' => "/storage/items/pol_husar_helm_greben.png",
+            'price' => 750,
+        ]);
+        DB::table('items')->insert([
+            'name' => "Saber",
+            'type' => "itp_type_one_handed_wpn",
+            'code_name' => "sablya_d",
+            'game_id' => 453,
+            'image' => "/storage/items/polyak_sablya_d.png",
+            'price' => 750,
+        ]);
+        DB::table('items')->insert([
+            'name' => "Thrusting Sword",
+            'type' => "itp_type_one_handed_wpn",
+            'code_name' => "prosta_shpaga",
+            'game_id' => 443,
+            'image' => "/storage/items/shpaga_pure_a.png",
+            'price' => 750,
+        ]);
+        DB::table('items')->insert([
+            'name' => "Half-Cuirass",
+            'type' => "itp_type_body_armor",
+            'code_name' => "m_swed_norm_armor",
+            'game_id' => 813,
+            'image' => "/storage/items/swed_kirasa.png",
             'price' => 750,
         ]);
 
         DB::table('items')->insert([
-            'name' => "Horse",
-            'type' => "itp_type_horse",
-            'code_name' => "itm_knight_armor",
-            'game_id' => 111,
-            'image' => "https://animavet.pl/media/products/5367898ede28dd50ec57a268d4c05fae/images/thumbnail/large_177.jpg?lm=1555607107",
+            'name' => "Bodyguard Camisole",
+            'type' => "itp_type_body_armor",
+            'code_name' => "evropa_gvardia_uniforma",
+            'game_id' => 267,
+            'image' => "/storage/items/swed_leibguard.png",
             'price' => 750,
         ]);
+
+        DB::table('items')->insert([
+            'name' => "Swedish Pikeman Uniform",
+            'type' => "itp_type_body_armor",
+            'code_name' => "evropa_pika_uniforma",
+            'game_id' => 297,
+            'image' => "/storage/items/swed_pikeman.png",
+            'price' => 750,
+        ]);
+        DB::table('items')->insert([
+            'name' => "Chain mail",
+            'type' => "itp_type_body_armor",
+            'code_name' => "m_ttr_norm_armor",
+            'game_id' => 807,
+            'image' => "/storage/items/ttr_kolcha.png",
+            'price' => 750,
+        ]);
+
+        DB::table('items')->insert([
+            'name' => "Behterets",
+            'type' => "itp_type_body_armor",
+            'code_name' => "tatar_bahter_a",
+            'game_id' => 300,
+            'image' => "/storage/items/ttr_mega-yushman.png",
+            'price' => 750,
+        ]);
+
+        DB::table('items')->insert([
+            'name' => "Chain Armor",
+            'type' => "itp_type_body_armor",
+            'code_name' => "tatar_seymen_armor",
+            'game_id' => 288,
+            'image' => "/storage/items/ttr_seymen.png",
+            'price' => 750,
+        ]);
+
+        DB::table('items')->insert([
+            'name' => "Chain Armor",
+            'type' => "itp_type_body_armor",
+            'code_name' => "m_ukr_norm_armor",
+            'game_id' => 799,
+            'image' => "/storage/items/ukr_kolcha.png",
+            'price' => 750,
+        ]);
+        DB::table('items')->insert([
+            'name' => "Yushman",
+            'type' => "itp_type_body_armor",
+            'code_name' => "m_ttr_good_armor",
+            'game_id' => 808,
+            'image' => "/storage/items/yushman.png",
+            'price' => 750,
+        ]);
+
+        DB::table('items')->insert([
+            'name' => "Jarids",
+            'type' => "itp_type_thrown",
+            'code_name' => "jarid",
+            'game_id' => 559,
+            'image' => "/storage/items/jarid_quiver.png",
+            'price' => 750,
+        ]);
+
+        DB::table('items')->insert([
+            'name' => "Morion",
+            'type' => "itp_type_head_armor",
+            'code_name' => "m_swed_norm_p_helmet",
+            'game_id' => 819,
+            'image' => "/storage/items/morion_good.png",
+            'price' => 750,
+        ]);
+
+        DB::table('items')->insert([
+            'name' => "Miquelet Musket",
+            'type' => "itp_type_crossbow",
+            'code_name' => "uber_mushket",
+            'game_id' => 713,
+            'image' => "/storage/items/mushketi_b.png",
+            'price' => 750,
+        ]);
+
+        DB::table('items')->insert([
+            'name' => "Thick Shield",
+            'type' => "itp_type_shield",
+            'code_name' => "good_shield",
+            'game_id' => 733,
+            'image' => "/storage/items/oim_shield_round_a.png",
+            'price' => 750,
+        ]);
+
     }
 }

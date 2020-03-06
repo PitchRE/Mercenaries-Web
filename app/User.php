@@ -138,47 +138,47 @@ class User extends Authenticatable
     public function getWeapon1()
     {
         $item = UserItem::find($this->weapon_1);
-        return $item->ItemData ?? null;
+        return $item ?? null;
     }
     public function getWeapon2()
     {
         $item = UserItem::find($this->weapon_2);
-        return $item->ItemData ?? null;
+        return $item ?? null;
     }
     public function getWeapon3()
     {
         $item = UserItem::find($this->weapon_3);
-        return $item->ItemData ?? null;
+        return $item ?? null;
     }
     public function getWeapon4()
     {
         $item = UserItem::find($this->weapon_4);
-        return $item->ItemData ?? null;
+        return $item ?? null;
     }
     public function getHead()
     {
         $item = UserItem::find($this->head);
-        return $item->ItemData ?? null;
+        return $item ?? null;
     }
     public function getBody()
     {
         $item = UserItem::find($this->body);
-        return $item->ItemData ?? null;
+        return $item ?? null;
     }
     public function getGloves()
     {
         $item = UserItem::find($this->gloves);
-        return $item->ItemData ?? null;
+        return $item ?? null;
     }
     public function getBoots()
     {
         $item = UserItem::find($this->boots);
-        return $item->ItemData ?? null;
+        return $item ?? null;
     }
     public function getHorse()
     {
         $item = UserItem::find($this->horse);
-        return $item->ItemData ?? null;
+        return $item ?? null;
     }
 
 }

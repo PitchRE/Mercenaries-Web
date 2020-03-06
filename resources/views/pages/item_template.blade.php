@@ -1,11 +1,11 @@
 @if($item != null)
 <div class="card">
     <header class="card-header">
-        <span class="card-header-title themeFont">{{$item->name}}</span>
+        <span class="card-header-title themeFont">{{$item->ItemData->name}} | {{$item->id}}</span>
     </header>
     <div class="card-content">
         <div class="content">
-            <img src="{{$item->image}}" alt="" srcset="" />
+            <img src="{{$item->ItemData->image}}" alt="" srcset="" />
         </div>
 
     </div>

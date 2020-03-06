@@ -29,16 +29,16 @@ class WarbandController extends Controller
 
         } else {
 
-            $helmet = $user->getHead() ?? 0;
-            $armor = $user->getBody() ?? 0;
-            $gloves = $user->getGloves() ?? 0;
-            $boots = $user->getBoots() ?? 0;
-            $horse = $user->getHorse() ?? 0;
+            $helmet = $user->getHead()->ItemData->game_id ?? 0;
+            $armor = $user->getBody()->ItemData->game_id ?? 0;
+            $gloves = $user->getGloves()->ItemData->game_id ?? 0;
+            $boots = $user->getBoots()->ItemData->game_id ?? 0;
+            $horse = $user->getHorse()->ItemData->game_id ?? 0;
 
-            $weapon_1 = $user->getWeapon1() ?? 435;
-            $weapon_2 = $user->getWeapon2() ?? 0;
-            $weapon_3 = $user->getWeapon3() ?? 0;
-            $weapon_4 = $user->getWeapon4() ?? 0;
+            $weapon_1 = $user->getWeapon1()->ItemData->game_id ?? 0;
+            $weapon_2 = $user->getWeapon2()->ItemData->game_id ?? 0;
+            $weapon_3 = $user->getWeapon3()->ItemData->game_id ?? 0;
+            $weapon_4 = $user->getWeapon4()->ItemData->game_id ?? 0;
 
             return "0|{$request->pid}|{$helmet}|{$armor}|{$gloves}|{$boots}|{$weapon_1}|{$weapon_2}|{$weapon_3}|{$weapon_4}|{$horse}|1|{$user->exp}|{$user->level}|{$user->gold}|{$user->exp_next_level}|{$user->strength}|{$user->agility}|{$user->Ironflesh}|{$user->PowerStrike}|{$user->PowerThrow}|{$user->PowerDraw}|{$user->Shooting_from_Horseback}|{$user->Shield}|{$user->Athletics}|{$user->Riding}|{$user->OneHanded}|{$user->TwoHanded}|{$user->Polearms}|{$user->Archery}|{$user->Throwing}|{$user->Firearms}|{$user->secret_key}";
         }

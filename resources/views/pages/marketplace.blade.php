@@ -99,7 +99,7 @@
                                 @if($user->gold < $item->price)
                                     <a class="card-footer-item has-background-danger is-disabled">Buy</a>
                                     @else
-                                    <a href="{{route('buy-item', ['id' => '1'])}}"
+                                    <a href="{{route('buy-item', ['id' => $item->id])}}"
                                         class="card-footer-item has-background-success">Buy</a>
                                     @endif
                             </footer>
