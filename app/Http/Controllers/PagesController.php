@@ -8,6 +8,7 @@ use App\server;
 use App\User;
 use Auth;
 use Illuminate\Http\Request;
+use Response;
 
 class PagesController extends Controller
 {
@@ -89,7 +90,7 @@ class PagesController extends Controller
             $user = Auth::user();
 
         } else {
-            return redirect()->route('login_show');
+            return redirect()->route('login');
 
         }
         $kd_history = kd_history::take(5)->get();
@@ -100,6 +101,18 @@ class PagesController extends Controller
         $highest = $highest->kd;
 
         return view('pages.profile', compact('user', 'kd_history', 'lowest', 'highest'));
+    }
+
+    public function download()
+    {
+        //PDF file is stored under project/public/download/info.pdf
+        $file = public_path() . "/storage/download/Mercenaries.zip";
+
+        $headers = array(
+            'Content-Type: application/zip',
+        );
+
+        return Response::download($file, 'Mercenaries.zip', $headers);
     }
 
 }

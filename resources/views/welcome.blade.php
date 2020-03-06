@@ -87,11 +87,12 @@
           </div>
           <div class="dropdown-menu" id="dropdown-menu" role="menu">
             <div class="dropdown-content">
-              <a href="#" class="dropdown-item">
-                <i class="fas fa-check-circle"></i> <i class="fab fa-windows"> </i> Windows 7/10 x86 [Recommended]
+              <a href="{{route('download')}}" target="_blank" class="dropdown-item">
+                <i style="color: green" class="fas fa-check-circle"></i> <i class="fab fa-windows"> </i> Windows 7/10
+                x86 [Recommended]
               </a>
               <a href="#" class="dropdown-item">
-                <i class="fab fa-github"></i> <i class="fab fa-windows"> </i>Windows 7/10 x86 [Github]
+                <i class="fab fa-github"></i> <i class="fab fa-windows"> </i> Windows 7/10 x86 [Github]
               </a>
               <a href="#" class="dropdown-item">
                 <i class="fab fa-github"> </i> <i class="fab fa-linux"> </i> Linux [Github]

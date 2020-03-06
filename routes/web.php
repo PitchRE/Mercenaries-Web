@@ -12,7 +12,7 @@
  */
 
 Route::POST('/login_post', 'AuthController@doLogin')->name('login_execute');
-Route::GET('/login', 'PagesController@LoginView')->name('login_show');
+Route::GET('/login', 'PagesController@LoginView')->name('login');
 Route::GET('/', 'PagesController@index')->name('index');
 
 Route::group(['middleware' => 'auth'], function () {
@@ -43,3 +43,5 @@ Route::GET('/404', 'PagesController@NotFound')->name('404');
 Route::get('/checkplayer', 'WarbandController@checkplayer');
 Route::get('/GiveEXP', 'WarbandController@GiveEXP');
 Route::get('/GiveEarnings', 'WarbandController@GiveEarnings');
+
+Route::get('/download', 'PagesController@download')->name('download');
