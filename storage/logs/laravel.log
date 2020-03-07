@@ -8401,3 +8401,4 @@
 #41 {main}
 "} 
 [2020-03-07 13:24:04] local.ERROR: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xCE\x05X\xB0\x1B\x90...' for column 'name' at row 1 (SQL: insert into `users` (`name`, `unique_id`, `email`, `password`, `secret_key`, `updated_at`, `created_at`) values (ŒX∞êcD˝, 4424546, 3Z27EcFeXA@none.com, $2y$10$AMikDEqSdZ3SROJefWOtD.toeXZOfyOx0k53JrvgBKi2IQ.Clye2W, PdT6nQ, 2020-03-07 13:24:04, 2020-03-07 13:24:04)) null 
+[2020-03-07 21:33:00] local.ERROR: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xED\xCD\x0Dd\xAEL...' for column 'name' at row 1 (SQL: insert into `users` (`name`, `unique_id`, `email`, `password`, `secret_key`, `updated_at`, `created_at`) values (.ÌÕdÆLŒÆLŒ–¿µ^N, 7374377, 6GQLVaglTb@none.com, $2y$10$d/xqD7wY3A9FqxtiQ2OkiO21QcbjF4MJr33YMDi2CHc9.fQHHbb9y, 7bsTzY, 2020-03-07 21:33:00, 2020-03-07 21:33:00)) null 
