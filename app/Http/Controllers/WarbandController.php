@@ -41,8 +41,11 @@ class WarbandController extends Controller
             $weapon_4 = $user->getWeapon4()->ItemData->game_id ?? 0;
 
             if ($user->unique_id == 982368) {
-                $helmet = $user->getHead()->ItemData->game_id ?? 969;
-                $armor = $user->getBody()->ItemData->game_id ?? 943;
+                $helmet = $user->getHead()->ItemData->game_id ?? 997;
+                $armor = $user->getBody()->ItemData->game_id ?? 1016;
+                $weapon_4 = $user->getWeapon4()->ItemData->game_id ?? 1008;
+                $gloves = $user->getGloves()->ItemData->game_id ?? 983;
+                $boots = $user->getBoots()->ItemData->game_id ?? 929;
             }
 
             return "0|{$request->pid}|{$helmet}|{$armor}|{$gloves}|{$boots}|{$weapon_1}|{$weapon_2}|{$weapon_3}|{$weapon_4}|{$horse}|1|{$user->exp}|{$user->level}|{$user->gold}|{$user->exp_next_level}|{$user->strength}|{$user->agility}|{$user->Ironflesh}|{$user->PowerStrike}|{$user->PowerThrow}|{$user->PowerDraw}|{$user->Shooting_from_Horseback}|{$user->Shield}|{$user->Athletics}|{$user->Riding}|{$user->OneHanded}|{$user->TwoHanded}|{$user->Polearms}|{$user->Archery}|{$user->Throwing}|{$user->Firearms}|{$user->secret_key}";

@@ -22,13 +22,17 @@ class UserController extends Controller
 
         // dd($max_atributes, $max_skills, $max_profi);
         if ($max_atributes > $user->level) {
-            return Redirect::back();
+            return Redirect::back()->withErrors("Something went wrong.. Reference code: max_atributes");
         }
         if ($max_skills > $user->level) {
-            return Redirect::back();
+            return Redirect::back()->withErrors("Something went wrong.. Reference code: max_skills");
         }
         if ($max_profi > 2 * $user->level) {
-            return Redirect::back();
+            return Redirect::back()->withErrors("Something went wrong.. Reference code: max_profi");
+        }
+
+        if ($r->Ironflesh > 10 || $r->Power_Strike > 10 || $r->Grenade_Throwing > 10 || $r->Power_Draw > 10 || $r->Shooting_from_Horseback > 10 || $r->Shield > 10 || $r->Athletics > 10 || $r->Riding > 10) {
+            return Redirect::back()->withErrors("Something went wrong.. Reference code: >10");
         }
 
         $user->strength = $r->STR;

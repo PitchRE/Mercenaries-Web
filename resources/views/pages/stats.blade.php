@@ -18,6 +18,12 @@
     <section class="hero">
         <div class="hero-body">
             <div class="container">
+                @if($errors->any())
+                <div class="notification is-warning">
+                    <button class="delete"></button>
+                    {{$errors->first()}}
+                </div>
+                @endif
                 <h1 class="title has-text-centered themeFont">
                     {{$user->name}}
                 </h1>
@@ -231,7 +237,10 @@
         var pFreeProfi = {!! $user->getFreePoints()->profi !!}
         UpdateCounters();
         function add(element) {
+          
             obj = document.getElementById(element);
+            if(Skills.includes(element) && obj.textContent >= 10) return;
+            console.log()
             value = obj.textContent;
             if (Profi.includes(element)) {
                 if (FreeProfi > 0) {
