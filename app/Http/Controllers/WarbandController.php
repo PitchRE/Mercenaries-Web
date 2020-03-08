@@ -47,10 +47,10 @@ class WarbandController extends Controller
             $boots = $user->getBoots()->ItemData->game_id ?? 929;
             $horse = $user->getHorse()->ItemData->game_id ?? 680;
 
-            $weapon_1 = $user->getWeapon1()->ItemData->game_id ?? 1036;
-            $weapon_2 = $user->getWeapon2()->ItemData->game_id ?? 1052;
-            $weapon_3 = $user->getWeapon3()->ItemData->game_id ?? 1018;
-            $weapon_4 = $user->getWeapon4()->ItemData->game_id ?? 1033;
+            $weapon_1 = $user->getWeapon1()->ItemData->game_id ?? 1018;
+            $weapon_2 = $user->getWeapon2()->ItemData->game_id ?? 1048;
+            $weapon_3 = $user->getWeapon3()->ItemData->game_id ?? 1024;
+            $weapon_4 = $user->getWeapon4()->ItemData->game_id ?? 1026;
             // }
 
             return "0|{$request->pid}|{$helmet}|{$armor}|{$gloves}|{$boots}|{$weapon_1}|{$weapon_2}|{$weapon_3}|{$weapon_4}|{$horse}|1|{$user->exp}|{$user->level}|{$user->gold}|{$user->exp_next_level}|{$user->strength}|{$user->agility}|{$user->Ironflesh}|{$user->PowerStrike}|{$user->PowerThrow}|{$user->PowerDraw}|{$user->Shooting_from_Horseback}|{$user->Shield}|{$user->Athletics}|{$user->Riding}|{$user->OneHanded}|{$user->TwoHanded}|{$user->Polearms}|{$user->Archery}|{$user->Throwing}|{$user->Firearms}|{$user->secret_key}";
