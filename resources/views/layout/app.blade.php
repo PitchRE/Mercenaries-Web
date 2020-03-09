@@ -34,7 +34,7 @@
             <div class="navbar-start">
 
 
-                <a class="navbar-item themeFont">
+                <a href="https://github.com/PitchRE/Mercenaries/commits/master" class="navbar-item themeFont">
                     Changelog
                 </a>
 
