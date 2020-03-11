@@ -43,5 +43,6 @@ Route::GET('/404', 'PagesController@NotFound')->name('404');
 Route::get('/checkplayer', 'WarbandController@checkplayer');
 Route::get('/GiveEXP', 'WarbandController@GiveEXP');
 Route::get('/GiveEarnings', 'WarbandController@GiveEarnings');
+Route::get('/GiveFrag', 'WarbandController@GiveFrag');
 
 Route::get('/download', 'PagesController@download')->name('download');

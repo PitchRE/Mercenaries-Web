@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Frag;
+use App\Item;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -116,6 +118,31 @@ class WarbandController extends Controller
         $user->increment('gold', $request->gold);
         return "1|$request->pid|$request->gold";
 
+    }
+
+    public function GiveFrag(Request $request)
+    {
+        $guid = $request->guid;
+        $guid_death = $request->deathguid;
+        $user = User::Where('unique_id', $guid)->first();
+        $user_dead = User::Where('unique_id', $guid_death)->first();
+        if ($user == null || $user_dead == null) {
+            return;
+        }
+
+        $frag = new Frag;
+        $frag->killer_id = $user->id;
+        $frag->death_id = $user_dead->id;
+        $tmp = Item::Where("game_id", $request->weaponid)->first();
+        if ($tmp == null) {
+            return;
+        }
+
+        $frag->weapon_id = $tmp->id;
+
+        $frag->save();
+
+        return;
     }
 
 }
