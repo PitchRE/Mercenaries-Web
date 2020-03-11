@@ -17,7 +17,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_shield",
             'code_name' => "round_shield_d",
             'game_id' => 530,
-            'image' => "/storage/items/oim_shield_round_c.png",
+            'image' => "/storage/items/oim_shield_round_c.webp",
             'price' => 750,
         ]);
 
@@ -26,7 +26,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "poland_gusar_helmet_greben",
             'game_id' => 412,
-            'image' => "/storage/items/pol_husar_helm_greben.png",
+            'image' => "/storage/items/pol_husar_helm_greben.webp",
             'price' => 750,
         ]);
 
@@ -35,7 +35,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_body_armor",
             'code_name' => "m_swed_norm_armor",
             'game_id' => 813,
-            'image' => "/storage/items/swed_kirasa.png",
+            'image' => "/storage/items/swed_kirasa.webp",
             'price' => 750,
         ]);
 
@@ -44,7 +44,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_body_armor",
             'code_name' => "evropa_gvardia_uniforma",
             'game_id' => 267,
-            'image' => "/storage/items/swed_leibguard.png",
+            'image' => "/storage/items/swed_leibguard.webp",
             'price' => 750,
         ]);
 
@@ -53,7 +53,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_body_armor",
             'code_name' => "evropa_pika_uniforma",
             'game_id' => 297,
-            'image' => "/storage/items/swed_pikeman.png",
+            'image' => "/storage/items/swed_pikeman.webp",
             'price' => 750,
         ]);
         DB::table('items')->UpdateOrInsert([
@@ -61,7 +61,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_body_armor",
             'code_name' => "m_ttr_norm_armor",
             'game_id' => 807,
-            'image' => "/storage/items/ttr_kolcha.png",
+            'image' => "/storage/items/ttr_kolcha.webp",
             'price' => 750,
         ]);
 
@@ -70,7 +70,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_body_armor",
             'code_name' => "tatar_bahter_a",
             'game_id' => 300,
-            'image' => "/storage/items/ttr_mega-yushman.png",
+            'image' => "/storage/items/ttr_mega-yushman.webp",
             'price' => 750,
         ]);
 
@@ -79,7 +79,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_body_armor",
             'code_name' => "tatar_seymen_armor",
             'game_id' => 288,
-            'image' => "/storage/items/ttr_seymen.png",
+            'image' => "/storage/items/ttr_seymen.webp",
             'price' => 750,
         ]);
 
@@ -88,7 +88,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_body_armor",
             'code_name' => "m_ukr_norm_armor",
             'game_id' => 799,
-            'image' => "/storage/items/ukr_kolcha.png",
+            'image' => "/storage/items/ukr_kolcha.webp",
             'price' => 750,
         ]);
         DB::table('items')->UpdateOrInsert([
@@ -96,7 +96,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_body_armor",
             'code_name' => "m_ttr_good_armor",
             'game_id' => 808,
-            'image' => "/storage/items/yushman.png",
+            'image' => "/storage/items/yushman.webp",
             'price' => 750,
         ]);
 
@@ -105,7 +105,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_thrown",
             'code_name' => "jarid",
             'game_id' => 559,
-            'image' => "/storage/items/jarid_quiver.png",
+            'image' => "/storage/items/jarid_quiver.webp",
             'price' => 750,
         ]);
 
@@ -114,7 +114,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "m_swed_norm_p_helmet",
             'game_id' => 819,
-            'image' => "/storage/items/morion_good.png",
+            'image' => "/storage/items/morion_good.webp",
             'price' => 750,
         ]);
 
@@ -123,7 +123,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_shield",
             'code_name' => "good_shield",
             'game_id' => 733,
-            'image' => "/storage/items/oim_shield_round_a.png",
+            'image' => "/storage/items/oim_shield_round_a.webp",
             'price' => 750,
         ]);
 
@@ -132,7 +132,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "barbuta1",
             'game_id' => 1055,
-            'image' => "/storage/items/barbuta1.png",
+            'image' => "/storage/items/barbuta1.webp",
             'price' => 750,
         ]);
 
@@ -141,7 +141,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_polearm",
             'code_name' => "bec_de_corbin",
             'game_id' => 1026,
-            'image' => "/storage/items/bec_de_corbin.png",
+            'image' => "/storage/items/bec_de_corbin.webp",
             'price' => 750,
         ]);
 
@@ -150,7 +150,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_polearm",
             'code_name' => "bec_de_corbin",
             'game_id' => 1026,
-            'image' => "/storage/items/bec_de_corbin.png",
+            'image' => "/storage/items/bec_de_corbin.webp",
             'price' => 750,
         ]);
 
@@ -159,7 +159,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_two_handed_wpn",
             'code_name' => "berdish",
             'game_id' => 506,
-            'image' => "/storage/items/berdish.png",
+            'image' => "/storage/items/berdish.webp",
             'price' => 750,
         ]);
 
@@ -168,7 +168,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_two_handed_wpn",
             'code_name' => "alebarda",
             'game_id' => 505,
-            'image' => "/storage/items/alebarda.png",
+            'image' => "/storage/items/alebarda.webp",
             'price' => 750,
         ]);
 
@@ -177,7 +177,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "alebarda",
             'game_id' => 1063,
-            'image' => "/storage/items/bolzanobucket.png",
+            'image' => "/storage/items/bolzanobucket.webp",
             'price' => 750,
         ]);
 
@@ -186,7 +186,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "byzantion",
             'game_id' => 1058,
-            'image' => "/storage/items/byzantion.png",
+            'image' => "/storage/items/byzantion.webp",
             'price' => 750,
         ]);
 
@@ -195,7 +195,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "chapel-de-fer",
             'game_id' => 1008,
-            'image' => "/storage/items/chapel-de-fer.png",
+            'image' => "/storage/items/chapel-de-fer.webp",
             'price' => 750,
         ]);
 
@@ -204,7 +204,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "crownedhelm",
             'game_id' => 1070,
-            'image' => "/storage/items/crownedhelm.png",
+            'image' => "/storage/items/crownedhelm.webp",
             'price' => 750,
         ]);
 
@@ -213,7 +213,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "visored_salet",
             'game_id' => 1057,
-            'image' => "/storage/items/visored_salet.png",
+            'image' => "/storage/items/visored_salet.webp",
             'price' => 750,
         ]);
 
@@ -222,7 +222,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "visored_salet_coif",
             'game_id' => 1056,
-            'image' => "/storage/items/visored_salet_coif.png",
+            'image' => "/storage/items/visored_salet_coif.webp",
             'price' => 750,
         ]);
 
@@ -231,7 +231,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "visored_salet_coif",
             'game_id' => 1056,
-            'image' => "/storage/items/visored_salet_coif.png",
+            'image' => "/storage/items/visored_salet_coif.webp",
             'price' => 750,
         ]);
         DB::table('items')->UpdateOrInsert([
@@ -239,7 +239,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "open_salet",
             'game_id' => 1059,
-            'image' => "/storage/items/open_salet.png",
+            'image' => "/storage/items/open_salet.webp",
             'price' => 750,
         ]);
 
@@ -248,7 +248,7 @@ class ItemsTableSeeder extends Seeder
             'type' => "itp_type_head_armor",
             'code_name' => "frenchpepperpot",
             'game_id' => 1060,
-            'image' => "/storage/items/frenchpepperpot.png",
+            'image' => "/storage/items/frenchpepperpot.webp",
             'price' => 750,
         ]);
 
@@ -257,7 +257,7 @@ class ItemsTableSeeder extends Seeder
             'name' => "greathelm1",
             'type' => "itp_type_head_armor",
             'game_id' => 1061,
-            'image' => "/storage/items/greathelm1.png",
+            'image' => "/storage/items/greathelm1.webp",
             'price' => 750,
         ]);
 
@@ -266,7 +266,7 @@ class ItemsTableSeeder extends Seeder
             'name' => "kettlehatfacebyrnie",
             'type' => "itp_type_head_armor",
             'game_id' => 1062,
-            'image' => "/storage/items/kettlehatfacebyrnie.png",
+            'image' => "/storage/items/kettlehatfacebyrnie.webp",
             'price' => 750,
         ]);
 
@@ -275,7 +275,7 @@ class ItemsTableSeeder extends Seeder
             'name' => "bolzanobucket",
             'type' => "itp_type_head_armor",
             'game_id' => 1063,
-            'image' => "/storage/items/bolzanobucket.png",
+            'image' => "/storage/items/bolzanobucket.webp",
             'price' => 750,
         ]);
 
@@ -284,7 +284,7 @@ class ItemsTableSeeder extends Seeder
             'name' => "normanpepperpot",
             'type' => "itp_type_head_armor",
             'game_id' => 1064,
-            'image' => "/storage/items/normanpepperpot.png",
+            'image' => "/storage/items/normanpepperpot.webp",
             'price' => 750,
         ]);
 
@@ -293,7 +293,7 @@ class ItemsTableSeeder extends Seeder
             'name' => "greathelmwhat",
             'type' => "itp_type_head_armor",
             'game_id' => 1065,
-            'image' => "/storage/items/greathelmwhat.png",
+            'image' => "/storage/items/greathelmwhat.webp",
             'price' => 750,
         ]);
 
@@ -302,7 +302,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "col1_kettlehat2";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1066;
-        $item->image = "/storage/items/col1_kettlehat2.png";
+        $item->image = "/storage/items/col1_kettlehat2.webp";
         $item->price = 750;
         $item->save();
 
@@ -311,7 +311,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "fullfacecoif";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1067;
-        $item->image = "/storage/items/fullfacecoif.png";
+        $item->image = "/storage/items/fullfacecoif.webp";
         $item->price = 750;
         $item->save();
 
@@ -320,7 +320,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "weimarhelm";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1068;
-        $item->image = "/storage/items/weimarhelm.png";
+        $item->image = "/storage/items/weimarhelm.webp";
         $item->price = 750;
         $item->save();
 
@@ -329,7 +329,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "open_salet_coif";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1069;
-        $item->image = "/storage/items/open_salet_coif.png";
+        $item->image = "/storage/items/open_salet_coif.webp";
         $item->price = 750;
         $item->save();
 
@@ -338,7 +338,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "crownedhelm ";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1070;
-        $item->image = "/storage/items/crownedhelm.png";
+        $item->image = "/storage/items/crownedhelm.webp";
         $item->price = 750;
         $item->save();
 
@@ -347,7 +347,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "frenchpepperpot2 ";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1071;
-        $item->image = "/storage/items/frenchpepperpot2.png";
+        $item->image = "/storage/items/frenchpepperpot2.webp";
         $item->price = 750;
         $item->save();
 
@@ -356,7 +356,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "inv_nikolskoe_helm ";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1072;
-        $item->image = "/storage/items/inv_nikolskoe_helm.png";
+        $item->image = "/storage/items/inv_nikolskoe_helm.webp";
         $item->price = 750;
         $item->save();
 
@@ -365,7 +365,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "flattophelmet ";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1073;
-        $item->image = "/storage/items/flattophelmet.png";
+        $item->image = "/storage/items/flattophelmet.webp";
         $item->price = 750;
         $item->save();
 
@@ -374,7 +374,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "pepperpothelm1 ";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1074;
-        $item->image = "/storage/items/pepperpothelm1.png";
+        $item->image = "/storage/items/pepperpothelm1.webp";
         $item->price = 750;
         $item->save();
 
@@ -383,7 +383,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "inv_rus_helm";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1075;
-        $item->image = "/storage/items/inv_rus_helm.png";
+        $item->image = "/storage/items/inv_rus_helm.webp";
         $item->price = 750;
         $item->save();
 
@@ -392,7 +392,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "munitionshelm1";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1076;
-        $item->image = "/storage/items/munitionshelm1.png";
+        $item->image = "/storage/items/munitionshelm1.webp";
         $item->price = 750;
         $item->save();
 
@@ -401,7 +401,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "normanhelmbalaclavacoif";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1077;
-        $item->image = "/storage/items/normanhelmbalaclavacoif.png";
+        $item->image = "/storage/items/normanhelmbalaclavacoif.webp";
         $item->price = 750;
         $item->save();
 
@@ -410,7 +410,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "flemish_armet";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1020;
-        $item->image = "/storage/items/flemish_armet.png";
+        $item->image = "/storage/items/flemish_armet.webp";
         $item->price = 750;
         $item->save();
 
@@ -419,7 +419,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "great_bascinet";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1021;
-        $item->image = "/storage/items/greatbascinet1.png";
+        $item->image = "/storage/items/greatbascinet1.webp";
         $item->price = 750;
         $item->save();
 
@@ -428,7 +428,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "bnw_armour_slashed";
         $item->type = "itp_type_body_armor";
         $item->game_id = 1016;
-        $item->image = "/storage/items/bnw_armour_slashed.png";
+        $item->image = "/storage/items/bnw_armour_slashed.webp";
         $item->price = 750;
         $item->save();
 
@@ -437,7 +437,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "brigandine_black";
         $item->type = "itp_type_body_armor";
         $item->game_id = 969;
-        $item->image = "/storage/items/brigandine_black_mail.png";
+        $item->image = "/storage/items/brigandine_black_mail.webp";
         $item->price = 750;
         $item->save();
 
@@ -446,7 +446,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "brigandine_red";
         $item->type = "itp_type_body_armor";
         $item->game_id = 963;
-        $item->image = "/storage/items/brigandine_red.png";
+        $item->image = "/storage/items/brigandine_red.webp";
         $item->price = 750;
         $item->save();
 
@@ -455,7 +455,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "brigandine_green";
         $item->type = "itp_type_body_armor";
         $item->game_id = 964;
-        $item->image = "/storage/items/brigandine_green.png";
+        $item->image = "/storage/items/brigandine_green.webp";
         $item->price = 750;
         $item->save();
 
@@ -464,7 +464,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "brigandine_blue";
         $item->type = "itp_type_body_armor";
         $item->game_id = 965;
-        $item->image = "/storage/items/brigandine_blue.png";
+        $item->image = "/storage/items/brigandine_blue.webp";
         $item->price = 750;
         $item->save();
 
@@ -473,7 +473,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "churburg_13";
         $item->type = "itp_type_body_armor";
         $item->game_id = 941;
-        $item->image = "/storage/items/churburg_13.png";
+        $item->image = "/storage/items/churburg_13.webp";
         $item->price = 750;
         $item->save();
 
@@ -482,7 +482,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "churburg_13_mail";
         $item->type = "itp_type_body_armor";
         $item->game_id = 943;
-        $item->image = "/storage/items/churburg_13_mail.png";
+        $item->image = "/storage/items/churburg_13_mail.webp";
         $item->price = 750;
         $item->save();
 
@@ -491,7 +491,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "corrazina_red";
         $item->type = "itp_type_body_armor";
         $item->game_id = 937;
-        $item->image = "/storage/items/corrazina_red.png";
+        $item->image = "/storage/items/corrazina_red.webp";
         $item->price = 750;
         $item->save();
 
@@ -500,7 +500,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "corrazina_green";
         $item->type = "itp_type_body_armor";
         $item->game_id = 938;
-        $item->image = "/storage/items/corrazina_green.png";
+        $item->image = "/storage/items/corrazina_green.webp";
         $item->price = 750;
         $item->save();
 
@@ -509,7 +509,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "corrazina_grey";
         $item->type = "itp_type_body_armor";
         $item->game_id = 939;
-        $item->image = "/storage/items/corrazina_grey.png";
+        $item->image = "/storage/items/corrazina_grey.webp";
         $item->price = 750;
         $item->save();
 
@@ -518,7 +518,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "early_transitional_blue";
         $item->type = "itp_type_body_armor";
         $item->game_id = 945;
-        $item->image = "/storage/items/early_transitional_blue.png";
+        $item->image = "/storage/items/early_transitional_blue.webp";
         $item->price = 750;
         $item->save();
 
@@ -527,7 +527,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "early_transitional_orange";
         $item->type = "itp_type_body_armor";
         $item->game_id = 946;
-        $item->image = "/storage/items/early_transitional_orange.png";
+        $item->image = "/storage/items/early_transitional_orange.webp";
         $item->price = 750;
         $item->save();
 
@@ -536,7 +536,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "early_transitional_white";
         $item->type = "itp_type_body_armor";
         $item->game_id = 947;
-        $item->image = "/storage/items/early_transitional_white.png";
+        $item->image = "/storage/items/early_transitional_white.webp";
         $item->price = 750;
         $item->save();
 
@@ -545,7 +545,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "gambeson";
         $item->type = "itp_type_body_armor";
         $item->game_id = 944;
-        $item->image = "/storage/items/gambeson.png";
+        $item->image = "/storage/items/gambeson.webp";
         $item->price = 750;
         $item->save();
 
@@ -554,7 +554,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "gothic_armour";
         $item->type = "itp_type_body_armor";
         $item->game_id = 1015;
-        $item->image = "/storage/items/gothic_armour.png";
+        $item->image = "/storage/items/gothic_armour.webp";
         $item->price = 750;
         $item->save();
 
@@ -563,7 +563,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "kuyak_a";
         $item->type = "itp_type_body_armor";
         $item->game_id = 932;
-        $item->image = "/storage/items/kuyak_a.png";
+        $item->image = "/storage/items/kuyak_a.webp";
         $item->price = 750;
         $item->save();
 
@@ -572,7 +572,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "kuyak_b";
         $item->type = "itp_type_body_armor";
         $item->game_id = 933;
-        $item->image = "/storage/items/kuyak_b.png";
+        $item->image = "/storage/items/kuyak_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -581,7 +581,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "milanese_armour";
         $item->type = "itp_type_body_armor";
         $item->game_id = 1014;
-        $item->image = "/storage/items/milanese_armour.png";
+        $item->image = "/storage/items/milanese_armour.webp";
         $item->price = 750;
         $item->save();
 
@@ -590,7 +590,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "rus_lamellar_b";
         $item->type = "itp_type_body_armor";
         $item->game_id = 931;
-        $item->image = "/storage/items/rus_lamellar_b.png";
+        $item->image = "/storage/items/rus_lamellar_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -599,7 +599,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "rus_scale";
         $item->type = "itp_type_body_armor";
         $item->game_id = 934;
-        $item->image = "/storage/items/rus_scale.png";
+        $item->image = "/storage/items/rus_scale.webp";
         $item->price = 750;
         $item->save();
 
@@ -608,7 +608,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "rus_scale";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1007;
-        $item->image = "/storage/items/eyeslot_kettlehat.png";
+        $item->image = "/storage/items/eyeslot_kettlehat.webp";
         $item->price = 750;
         $item->save();
 
@@ -617,7 +617,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "bnw_gauntlet_L";
         $item->type = "itp_type_hand_armor";
         $item->game_id = 1010;
-        $item->image = "/storage/items/bnw_gauntlet_L.png";
+        $item->image = "/storage/items/bnw_gauntlet_L.webp";
         $item->price = 750;
         $item->save();
 
@@ -626,7 +626,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "demi_gauntlets";
         $item->type = "itp_type_hand_armor";
         $item->game_id = 982;
-        $item->image = "/storage/items/demi_gauntlets.png";
+        $item->image = "/storage/items/demi_gauntlets.webp";
         $item->price = 750;
         $item->save();
 
@@ -635,7 +635,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "hourglass_gauntlets_ornate";
         $item->type = "itp_type_hand_armor";
         $item->game_id = 959;
-        $item->image = "/storage/items/hourglass_gauntlets_ornate.png";
+        $item->image = "/storage/items/hourglass_gauntlets_ornate.webp";
         $item->price = 750;
         $item->save();
 
@@ -644,7 +644,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "mail_gauntlets";
         $item->type = "itp_type_hand_armor";
         $item->game_id = 958;
-        $item->image = "/storage/items/mail_gauntlets.png";
+        $item->image = "/storage/items/mail_gauntlets.webp";
         $item->price = 750;
         $item->save();
 
@@ -653,7 +653,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "plate_mittens_L";
         $item->type = "itp_type_hand_armor";
         $item->game_id = 1009;
-        $item->image = "/storage/items/plate_mittens_L.png";
+        $item->image = "/storage/items/plate_mittens_L.webp";
         $item->price = 750;
         $item->save();
 
@@ -662,7 +662,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "leather_boots";
         $item->type = "itp_type_foot_armor";
         $item->game_id = 980;
-        $item->image = "/storage/items/leather_boots.png";
+        $item->image = "/storage/items/leather_boots.webp";
         $item->price = 750;
         $item->save();
 
@@ -671,7 +671,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "rus_cav_boots";
         $item->type = "itp_type_foot_armor";
         $item->game_id = 929;
-        $item->image = "/storage/items/rus_cav_boots.png";
+        $item->image = "/storage/items/rus_cav_boots.webp";
         $item->price = 750;
         $item->save();
 
@@ -680,7 +680,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "rus_shoes";
         $item->type = "itp_type_foot_armor";
         $item->game_id = 928;
-        $item->image = "/storage/items/rus_shoes.png";
+        $item->image = "/storage/items/rus_shoes.webp";
         $item->price = 750;
         $item->save();
 
@@ -689,7 +689,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "rus_splint_greaves";
         $item->type = "itp_type_foot_armor";
         $item->game_id = 936;
-        $item->image = "/storage/items/rus_splint_greaves.png";
+        $item->image = "/storage/items/rus_splint_greaves.webp";
         $item->price = 750;
         $item->save();
 
@@ -698,7 +698,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "shynbaulds";
         $item->type = "itp_type_foot_armor";
         $item->game_id = 949;
-        $item->image = "/storage/items/shynbaulds.png";
+        $item->image = "/storage/items/shynbaulds.webp";
         $item->price = 750;
         $item->save();
 
@@ -707,7 +707,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "splinted_greaves_spurs";
         $item->type = "itp_type_foot_armor";
         $item->game_id = 948;
-        $item->image = "/storage/items/splinted_greaves_spurs.png";
+        $item->image = "/storage/items/splinted_greaves_spurs.webp";
         $item->price = 750;
         $item->save();
 
@@ -716,7 +716,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "steel_greaves";
         $item->type = "itp_type_foot_armor";
         $item->game_id = 978;
-        $item->image = "/storage/items/steel_greaves.png";
+        $item->image = "/storage/items/steel_greaves.webp";
         $item->price = 750;
         $item->save();
 
@@ -725,7 +725,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "steel_greaves2";
         $item->type = "itp_type_foot_armor";
         $item->game_id = 979;
-        $item->image = "/storage/items/steel_greaves2.png";
+        $item->image = "/storage/items/steel_greaves2.webp";
         $item->price = 750;
         $item->save();
 
@@ -734,7 +734,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "steel_greaves2";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 493;
-        $item->image = "/storage/items/chekan_pure_a.png";
+        $item->image = "/storage/items/chekan_pure_a.webp";
         $item->price = 750;
         $item->save();
 
@@ -743,7 +743,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "crusader_sword";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 1046;
-        $item->image = "/storage/items/crusader_sword.png";
+        $item->image = "/storage/items/crusader_sword.webp";
         $item->price = 750;
         $item->save();
 
@@ -752,7 +752,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "danish_greatsword";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 1035;
-        $item->image = "/storage/items/danish_greatsword.png";
+        $item->image = "/storage/items/danish_greatsword.webp";
         $item->price = 750;
         $item->save();
 
@@ -761,7 +761,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "elegant_poleaxe";
         $item->type = "itp_type_polearm";
         $item->game_id = 1023;
-        $item->image = "/storage/items/elegant_poleaxe.png";
+        $item->image = "/storage/items/elegant_poleaxe.webp";
         $item->price = 750;
         $item->save();
 
@@ -770,7 +770,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "english_bill";
         $item->type = "itp_type_polearm";
         $item->game_id = 1027;
-        $item->image = "/storage/items/english_bill.png";
+        $item->image = "/storage/items/english_bill.webp";
         $item->price = 750;
         $item->save();
 
@@ -779,7 +779,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "english_longsword";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 1038;
-        $item->image = "/storage/items/english_longsword.png";
+        $item->image = "/storage/items/english_longsword.webp";
         $item->price = 750;
         $item->save();
 
@@ -788,7 +788,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "espada_eslavona";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 1036;
-        $item->image = "/storage/items/espada_eslavona.png";
+        $item->image = "/storage/items/espada_eslavona.webp";
         $item->price = 750;
         $item->save();
 
@@ -797,7 +797,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Miquelet Musket";
         $item->type = "itp_type_crossbow";
         $item->game_id = 588;
-        $item->image = "/storage/items/evr_musket_udarniy_a_I.png";
+        $item->image = "/storage/items/evr_musket_udarniy_a_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -806,7 +806,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Miquelet Musket";
         $item->type = "itp_type_crossbow";
         $item->game_id = 713;
-        $item->image = "/storage/items/evr_musket_udarniy_b_I.png";
+        $item->image = "/storage/items/evr_musket_udarniy_b_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -815,7 +815,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "flamberge";
         $item->type = "itp_type_polearm";
         $item->game_id = 1018;
-        $item->image = "/storage/items/flamberge.png";
+        $item->image = "/storage/items/flamberge.webp";
         $item->price = 750;
         $item->save();
 
@@ -824,7 +824,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "german_bastard_sword";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 1039;
-        $item->image = "/storage/items/german_bastard_sword.png";
+        $item->image = "/storage/items/german_bastard_sword.webp";
         $item->price = 750;
         $item->save();
 
@@ -833,7 +833,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "german_poleaxe";
         $item->type = "itp_type_polearm";
         $item->game_id = 1024;
-        $item->image = "/storage/items/german_poleaxe.png";
+        $item->image = "/storage/items/german_poleaxe.webp";
         $item->price = 750;
         $item->save();
 
@@ -842,7 +842,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "glaive_a";
         $item->type = "itp_type_polearm";
         $item->game_id = 1031;
-        $item->image = "/storage/items/glaive_a.png";
+        $item->image = "/storage/items/glaive_a.webp";
         $item->price = 750;
         $item->save();
 
@@ -851,7 +851,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "glaive_b";
         $item->type = "itp_type_polearm";
         $item->game_id = 1032;
-        $item->image = "/storage/items/glaive_b.png";
+        $item->image = "/storage/items/glaive_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -860,7 +860,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "grosse_messer";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 1047;
-        $item->image = "/storage/items/grosse_messer.png";
+        $item->image = "/storage/items/grosse_messer.webp";
         $item->price = 750;
         $item->save();
 
@@ -869,7 +869,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "grosse_messer_b";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 1048;
-        $item->image = "/storage/items/grosse_messer_b.png";
+        $item->image = "/storage/items/grosse_messer_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -878,7 +878,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "guisarme_a";
         $item->type = "itp_type_polearm";
         $item->game_id = 1029;
-        $item->image = "/storage/items/guisarme_a.png";
+        $item->image = "/storage/items/guisarme_a.webp";
         $item->price = 750;
         $item->save();
 
@@ -887,7 +887,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "irish_sword";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 1049;
-        $item->image = "/storage/items/irish_sword.png";
+        $item->image = "/storage/items/irish_sword.webp";
         $item->price = 750;
         $item->save();
 
@@ -896,7 +896,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "italian_falchion";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 1044;
-        $item->image = "/storage/items/italian_falchion.png";
+        $item->image = "/storage/items/italian_falchion.webp";
         $item->price = 750;
         $item->save();
 
@@ -905,7 +905,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "italian_sword";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 1044;
-        $item->image = "/storage/items/italian_sword.png";
+        $item->image = "/storage/items/italian_sword.webp";
         $item->price = 750;
         $item->save();
 
@@ -914,7 +914,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "east_arrows";
         $item->type = "itp_type_arrows";
         $item->game_id = 161;
-        $item->image = "/storage/items/kalmyk_kolchan_I.png";
+        $item->image = "/storage/items/kalmyk_kolchan_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -923,7 +923,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Bad Arrows";
         $item->type = "itp_type_arrows";
         $item->game_id = 681;
-        $item->image = "/storage/items/arrows_a_kolchan_I.png";
+        $item->image = "/storage/items/arrows_a_kolchan_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -932,7 +932,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Tatar Arrows";
         $item->type = "itp_type_arrows";
         $item->game_id = 160;
-        $item->image = "/storage/items/arrows_b_kolchan_I.png";
+        $item->image = "/storage/items/arrows_b_kolchan_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -941,7 +941,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Barbed Arrows";
         $item->type = "itp_type_arrows";
         $item->game_id = 162;
-        $item->image = "/storage/items/arrows_c_kolchan_I.png";
+        $item->image = "/storage/items/arrows_c_kolchan_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -950,7 +950,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Bodkin Arrows";
         $item->type = "itp_type_arrows";
         $item->game_id = 163;
-        $item->image = "/storage/items/arrows_d_kolchan_I.png";
+        $item->image = "/storage/items/arrows_d_kolchan_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -959,7 +959,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Bow";
         $item->type = "itp_type_bow";
         $item->game_id = 619;
-        $item->image = "/storage/items/kalmyk_naluch_I.png";
+        $item->image = "/storage/items/kalmyk_naluch_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -968,7 +968,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Double-barreled Wheellock Carbine";
         $item->type = "itp_type_crossbow";
         $item->game_id = 626;
-        $item->image = "/storage/items/karabin_2stwolB_I.png";
+        $item->image = "/storage/items/karabin_2stwolB_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -977,7 +977,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Double-barreled Dutch Carbine";
         $item->type = "itp_type_crossbow";
         $item->game_id = 628;
-        $item->image = "/storage/items/karabin_2stwol_I.png";
+        $item->image = "/storage/items/karabin_2stwol_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -986,7 +986,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Simple Wheellock Carbine";
         $item->type = "itp_type_crossbow";
         $item->game_id = 594;
-        $item->image = "/storage/items/karabin_a_I.png";
+        $item->image = "/storage/items/karabin_a_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -995,7 +995,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Good Miquelet Carbine";
         $item->type = "itp_type_crossbow";
         $item->game_id = 600;
-        $item->image = "/storage/items/karabin_batarey_good_I.png";
+        $item->image = "/storage/items/karabin_batarey_good_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1004,7 +1004,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Miquelet Carbine";
         $item->type = "itp_type_crossbow";
         $item->game_id = 598;
-        $item->image = "/storage/items/karabin_batarey_I.png";
+        $item->image = "/storage/items/karabin_batarey_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1013,7 +1013,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Good Carbine";
         $item->type = "itp_type_crossbow";
         $item->game_id = 703;
-        $item->image = "/storage/items/karabin_b_I.png";
+        $item->image = "/storage/items/karabin_b_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1022,7 +1022,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Matchlock Carbine";
         $item->type = "itp_type_crossbow";
         $item->game_id = 590;
-        $item->image = "/storage/items/karabin_old_a_I.png";
+        $item->image = "/storage/items/karabin_old_a_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1031,7 +1031,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Claymore";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 511;
-        $item->image = "/storage/items/kleymor_a.png";
+        $item->image = "/storage/items/kleymor_a.webp";
         $item->price = 750;
         $item->save();
 
@@ -1040,7 +1040,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "kosa";
         $item->type = "itp_type_polearm";
         $item->game_id = 440;
-        $item->image = "/storage/items/kosa.png";
+        $item->image = "/storage/items/kosa.webp";
         $item->price = 750;
         $item->save();
 
@@ -1049,7 +1049,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "longbowman_sword";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 1043;
-        $item->image = "/storage/items/longbowman_sword.png";
+        $item->image = "/storage/items/longbowman_sword.webp";
         $item->price = 750;
         $item->save();
 
@@ -1058,7 +1058,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "longsword_b";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 1034;
-        $item->image = "/storage/items/longsword_b.png";
+        $item->image = "/storage/items/longsword_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1067,7 +1067,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "milanese_sword";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 1042;
-        $item->image = "/storage/items/milanese_sword.png";
+        $item->image = "/storage/items/milanese_sword.webp";
         $item->price = 750;
         $item->save();
 
@@ -1076,7 +1076,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Hunting Bow";
         $item->type = "itp_type_bow";
         $item->game_id = 727;
-        $item->image = "/storage/items/luk_a_saadak_I.png";
+        $item->image = "/storage/items/luk_a_saadak_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1085,7 +1085,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Bow";
         $item->type = "itp_type_bow";
         $item->game_id = 728;
-        $item->image = "/storage/items/luk_b_saadak_I.png";
+        $item->image = "/storage/items/luk_b_saadak_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1094,7 +1094,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Powerful Bow";
         $item->type = "itp_type_bow";
         $item->game_id = 729;
-        $item->image = "/storage/items/luk_c_saadak_I.png";
+        $item->image = "/storage/items/luk_c_saadak_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1103,7 +1103,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Composite Bow";
         $item->type = "itp_type_bow";
         $item->game_id = 730;
-        $item->image = "/storage/items/luk_d_saadak_I.png";
+        $item->image = "/storage/items/luk_d_saadak_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1112,7 +1112,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Musket";
         $item->type = "itp_type_crossbow";
         $item->game_id = 717;
-        $item->image = "/storage/items/mushket_a_I.png";
+        $item->image = "/storage/items/mushket_a_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1121,7 +1121,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Wheellock Musket";
         $item->type = "itp_type_crossbow";
         $item->game_id = 719;
-        $item->image = "/storage/items/mushket_b_I.png";
+        $item->image = "/storage/items/mushket_b_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1130,7 +1130,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Rusty Musket";
         $item->type = "itp_type_crossbow";
         $item->game_id = 707;
-        $item->image = "/storage/items/mushket_old_a_I.png";
+        $item->image = "/storage/items/mushket_old_a_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1139,7 +1139,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Rusty Musket";
         $item->type = "itp_type_crossbow";
         $item->game_id = 715;
-        $item->image = "/storage/items/musket_turk_fitil_pure_I.png";
+        $item->image = "/storage/items/musket_turk_fitil_pure_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1148,7 +1148,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Good Matchlock Musket";
         $item->type = "itp_type_crossbow";
         $item->game_id = 578;
-        $item->image = "/storage/items/musket_turk_fitil_rich_I.png";
+        $item->image = "/storage/items/musket_turk_fitil_rich_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1157,7 +1157,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Wheellock Musket";
         $item->type = "itp_type_crossbow";
         $item->game_id = 580;
-        $item->image = "/storage/items/musket_turk_koleso_I.png";
+        $item->image = "/storage/items/musket_turk_koleso_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1166,7 +1166,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Miquelet Musket";
         $item->type = "itp_type_crossbow";
         $item->game_id = 582;
-        $item->image = "/storage/items/musket_turk_udarniy_a_I.png";
+        $item->image = "/storage/items/musket_turk_udarniy_a_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1175,7 +1175,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Good Miquelet Musket";
         $item->type = "itp_type_crossbow";
         $item->game_id = 584;
-        $item->image = "/storage/items/musket_turk_udarniy_b_I.png";
+        $item->image = "/storage/items/musket_turk_udarniy_b_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1184,7 +1184,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "partisan";
         $item->type = "itp_type_polearm";
         $item->game_id = 1033;
-        $item->image = "/storage/items/partisan.png";
+        $item->image = "/storage/items/partisan.webp";
         $item->price = 750;
         $item->save();
 
@@ -1193,7 +1193,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Good Broadsword";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 744;
-        $item->image = "/storage/items/pehot_palash_rich_b.png";
+        $item->image = "/storage/items/pehot_palash_rich_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1202,7 +1202,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Old Pike";
         $item->type = "itp_type_polearm";
         $item->game_id = 768;
-        $item->image = "/storage/items/pika_b.png";
+        $item->image = "/storage/items/pika_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1211,7 +1211,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Pike";
         $item->type = "itp_type_polearm";
         $item->game_id = 769;
-        $item->image = "/storage/items/pika_b.png";
+        $item->image = "/storage/items/pika_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1220,7 +1220,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Balanced Pike";
         $item->type = "itp_type_polearm";
         $item->game_id = 770;
-        $item->image = "/storage/items/pika_b.png";
+        $item->image = "/storage/items/pika_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1229,7 +1229,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Double-barreled Dutch Pistol";
         $item->type = "itp_type_crossbow";
         $item->game_id = 632;
-        $item->image = "/storage/items/pistol_2stwolB_I.png";
+        $item->image = "/storage/items/pistol_2stwolB_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1238,7 +1238,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Double-barreled Pistol";
         $item->type = "itp_type_crossbow";
         $item->game_id = 725;
-        $item->image = "/storage/items/pistol_2stwol_I.png";
+        $item->image = "/storage/items/pistol_2stwol_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1247,7 +1247,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Old Pistol";
         $item->type = "itp_type_crossbow";
         $item->game_id = 602;
-        $item->image = "/storage/items/pistol_pure_a_I.png";
+        $item->image = "/storage/items/pistol_pure_a_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1256,7 +1256,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Pistol";
         $item->type = "itp_type_crossbow";
         $item->game_id = 604;
-        $item->image = "/storage/items/pistol_pure_b_I.png";
+        $item->image = "/storage/items/pistol_pure_b_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1265,7 +1265,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Pistol";
         $item->type = "itp_type_crossbow";
         $item->game_id = 606;
-        $item->image = "/storage/items/pistol_pure_c_I.png";
+        $item->image = "/storage/items/pistol_pure_c_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1274,7 +1274,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Good Pistol";
         $item->type = "itp_type_crossbow";
         $item->game_id = 608;
-        $item->image = "/storage/items/pistol_rich_a_I.png";
+        $item->image = "/storage/items/pistol_rich_a_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1283,7 +1283,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Good Pistol";
         $item->type = "itp_type_crossbow";
         $item->game_id = 610;
-        $item->image = "/storage/items/pistol_rich_b_I.png";
+        $item->image = "/storage/items/pistol_rich_b_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1292,7 +1292,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Good Pistol";
         $item->type = "itp_type_crossbow";
         $item->game_id = 612;
-        $item->image = "/storage/items/pistol_rich_c_I.png";
+        $item->image = "/storage/items/pistol_rich_c_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1301,7 +1301,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "poleaxe_a";
         $item->type = "itp_type_polearm";
         $item->game_id = 1022;
-        $item->image = "/storage/items/poleaxe_a.png";
+        $item->image = "/storage/items/poleaxe_a.webp";
         $item->price = 750;
         $item->save();
 
@@ -1310,7 +1310,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Hussar Lance";
         $item->type = "itp_type_polearm";
         $item->game_id = 501;
-        $item->image = "/storage/items/pol_gusar_lansa_b.png";
+        $item->image = "/storage/items/pol_gusar_lansa_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1319,7 +1319,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Hussar Lance";
         $item->type = "itp_type_polearm";
         $item->game_id = 501;
-        $item->image = "/storage/items/pol_gusar_lansa_b.png";
+        $item->image = "/storage/items/pol_gusar_lansa_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1328,7 +1328,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Rusty Saber";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 748;
-        $item->image = "/storage/items/polyak_sablya_pure_b.png";
+        $item->image = "/storage/items/polyak_sablya_pure_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1337,7 +1337,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Saber";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 749;
-        $item->image = "/storage/items/polyak_sablya_pure_b.png";
+        $item->image = "/storage/items/polyak_sablya_pure_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1346,7 +1346,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Good Saber";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 750;
-        $item->image = "/storage/items/polyak_sablya_pure_b.png";
+        $item->image = "/storage/items/polyak_sablya_pure_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1355,7 +1355,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Bullets";
         $item->type = "itp_type_bullets";
         $item->game_id = 164;
-        $item->image = "/storage/items/porohovnitsa_1.png";
+        $item->image = "/storage/items/porohovnitsa_1.webp";
         $item->price = 750;
         $item->save();
 
@@ -1364,7 +1364,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "Bullets";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 17;
-        $item->image = "/storage/items/practice_sword.png";
+        $item->image = "/storage/items/practice_sword.webp";
         $item->price = 750;
         $item->save();
 
@@ -1373,7 +1373,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "rondel_dagger";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 1052;
-        $item->image = "/storage/items/rondel_dagger.png";
+        $item->image = "/storage/items/rondel_dagger.webp";
         $item->price = 750;
         $item->save();
 
@@ -1382,7 +1382,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "samopal";
         $item->type = "itp_type_crossbow";
         $item->game_id = 564;
-        $item->image = "/storage/items/samopal_a_I.png";
+        $item->image = "/storage/items/samopal_a_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1391,7 +1391,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "samopal";
         $item->type = "itp_type_crossbow";
         $item->game_id = 566;
-        $item->image = "/storage/items/samopal_b_I.png";
+        $item->image = "/storage/items/samopal_b_I.webp";
         $item->price = 750;
         $item->save();
 
@@ -1400,7 +1400,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "scottish_sword";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 1045;
-        $item->image = "/storage/items/scottish_sword.png";
+        $item->image = "/storage/items/scottish_sword.webp";
         $item->price = 750;
         $item->save();
 
@@ -1409,7 +1409,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "scott_palash";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 510;
-        $item->image = "/storage/items/scott_palash.png";
+        $item->image = "/storage/items/scott_palash.webp";
         $item->price = 750;
         $item->save();
 
@@ -1418,7 +1418,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "side_sword";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 1041;
-        $item->image = "/storage/items/side_sword.png";
+        $item->image = "/storage/items/side_sword.webp";
         $item->price = 750;
         $item->save();
 
@@ -1427,7 +1427,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "simple_poleaxe";
         $item->type = "itp_type_polearm";
         $item->game_id = 1025;
-        $item->image = "/storage/items/simple_poleaxe.png";
+        $item->image = "/storage/items/simple_poleaxe.webp";
         $item->price = 750;
         $item->save();
 
@@ -1436,7 +1436,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "pike";
         $item->type = "itp_type_polearm";
         $item->game_id = 523;
-        $item->image = "/storage/items/spear_a_3m.png";
+        $item->image = "/storage/items/spear_a_3m.webp";
         $item->price = 750;
         $item->save();
 
@@ -1445,7 +1445,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "swiss_halberd";
         $item->type = "itp_type_polearm";
         $item->game_id = 1028;
-        $item->image = "/storage/items/swiss_halberd.png";
+        $item->image = "/storage/items/swiss_halberd.webp";
         $item->price = 750;
         $item->save();
 
@@ -1454,7 +1454,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "good_toporik";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 757;
-        $item->image = "/storage/items/toporik_rich_b.png";
+        $item->image = "/storage/items/toporik_rich_b.webp";
         $item->price = 750;
         $item->save();
 
@@ -1463,7 +1463,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "m_twohand_sword";
         $item->type = "itp_type_two_handed_wpn";
         $item->game_id = 766;
-        $item->image = "/storage/items/twohand_sword_a.png";
+        $item->image = "/storage/items/twohand_sword_a.webp";
         $item->price = 750;
         $item->save();
 
@@ -1472,7 +1472,7 @@ class ItemsTableSeeder extends Seeder
         $item->name = "wooden_stick";
         $item->type = "itp_type_one_handed_wpn";
         $item->game_id = 422;
-        $item->image = "/storage/items/wooden_stick.png";
+        $item->image = "/storage/items/wooden_stick.webp";
         $item->price = 750;
         $item->save();
 
