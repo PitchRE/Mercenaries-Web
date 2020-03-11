@@ -15,10 +15,10 @@ class CreateItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
+            $table->string('code_name');
             $table->bigInteger('game_id')->unsigned();
             $table->string('type');
             $table->string('name');
-            $table->string('code_name');
             $table->bigInteger('price');
             $table->text('image')->nullable();
             $table->timestamps();
