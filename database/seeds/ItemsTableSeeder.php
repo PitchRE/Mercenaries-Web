@@ -958,7 +958,7 @@ class ItemsTableSeeder extends Seeder
         $item->code_name = "luk_c";
         $item->name = "Bow";
         $item->type = "itp_type_bow";
-        $item->game_id = 161;
+        $item->game_id = 619;
         $item->image = "/storage/items/kalmyk_naluch_I.png";
         $item->price = 750;
         $item->save();

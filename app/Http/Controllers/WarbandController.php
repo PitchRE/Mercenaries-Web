@@ -21,6 +21,7 @@ class WarbandController extends Controller
             $user->unique_id = $request->guid;
             $user->email = \Str::random(10) . '@none.com';
             $pass = \Str::random(6);
+            $pass = strtolower($pass);
             $user->password = bcrypt($pass);
             $user->secret_key = $pass;
             $user->save();
