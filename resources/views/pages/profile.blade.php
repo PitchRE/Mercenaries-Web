@@ -129,6 +129,13 @@
                                         {{$user->deaths}}
                                     </td>
                                 </tr>
+
+                                <tr>
+                                    <td class="themeFontLight">Favourite Weapon</td>
+                                    <td class="themeFontLight">
+                                        {{$favWpn->ItemData->name}}
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

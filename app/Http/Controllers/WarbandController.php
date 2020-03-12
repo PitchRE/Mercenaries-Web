@@ -127,7 +127,7 @@ class WarbandController extends Controller
         $user = User::Where('unique_id', $guid)->first();
         $user_dead = User::Where('unique_id', $guid_death)->first();
         if ($user == null || $user_dead == null) {
-            return;
+            return "-3|";
         }
 
         $frag = new Frag;
@@ -135,14 +135,14 @@ class WarbandController extends Controller
         $frag->death_id = $user_dead->id;
         $tmp = Item::Where("game_id", $request->weaponid)->first();
         if ($tmp == null) {
-            return;
+            return "-3|";
         }
 
         $frag->weapon_id = $tmp->id;
 
         $frag->save();
 
-        return;
+        return "-3|";
     }
 
 }

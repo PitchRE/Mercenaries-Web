@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Frag;
 use App\Item;
 use App\kd_history;
 use App\server;
@@ -99,8 +100,13 @@ class PagesController extends Controller
         $highest = $kd_history->sortByDesc('kd')->values()->first();
         $lowest = $lowest->kd;
         $highest = $highest->kd;
+        $favWpn = Frag::select('weapon_id')
+            ->groupBy('weapon_id')
+            ->orderByRaw('COUNT(*) DESC')
+            ->limit(1)
+            ->first();
 
-        return view('pages.profile', compact('user', 'kd_history', 'lowest', 'highest'));
+        return view('pages.profile', compact('user', 'kd_history', 'lowest', 'highest', 'favWpn'));
     }
 
     public function download()
