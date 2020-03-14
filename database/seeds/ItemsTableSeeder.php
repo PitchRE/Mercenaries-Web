@@ -28,6 +28,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 412,
             'image' => "/storage/items/pol_husar_helm_greben.webp",
             'price' => 750,
+            'defence' => 50,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -37,6 +38,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 813,
             'image' => "/storage/items/swed_kirasa.webp",
             'price' => 750,
+            'defence' => 25,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -46,6 +48,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 267,
             'image' => "/storage/items/swed_leibguard.webp",
             'price' => 750,
+            'defence' => 20,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -55,6 +58,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 297,
             'image' => "/storage/items/swed_pikeman.webp",
             'price' => 750,
+            'defence' => 37,
         ]);
         DB::table('items')->UpdateOrInsert([
             'name' => "Chain mail",
@@ -63,6 +67,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 807,
             'image' => "/storage/items/ttr_kolcha.webp",
             'price' => 750,
+            'defence' => 25,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -72,6 +77,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 300,
             'image' => "/storage/items/ttr_mega-yushman.webp",
             'price' => 750,
+            'defence' => 52,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -81,6 +87,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 288,
             'image' => "/storage/items/ttr_seymen.webp",
             'price' => 750,
+            'defence' => 26,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -90,6 +97,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 799,
             'image' => "/storage/items/ukr_kolcha.webp",
             'price' => 750,
+            'defence' => 23,
         ]);
         DB::table('items')->UpdateOrInsert([
             'name' => "Yushman",
@@ -98,6 +106,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 808,
             'image' => "/storage/items/yushman.webp",
             'price' => 750,
+            'defence' => 40,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -107,6 +116,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 559,
             'image' => "/storage/items/jarid_quiver.webp",
             'price' => 750,
+
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -116,6 +126,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 819,
             'image' => "/storage/items/morion_good.webp",
             'price' => 750,
+            'defence' => 38,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -134,6 +145,7 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 1055,
             'image' => "/storage/items/barbuta1.webp",
             'price' => 750,
+            'defence' => 55,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -173,21 +185,13 @@ class ItemsTableSeeder extends Seeder
         ]);
 
         DB::table('items')->UpdateOrInsert([
-            'name' => "bolzanobucket",
-            'type' => "itp_type_head_armor",
-            'code_name' => "alebarda",
-            'game_id' => 1063,
-            'image' => "/storage/items/bolzanobucket.webp",
-            'price' => 750,
-        ]);
-
-        DB::table('items')->UpdateOrInsert([
             'name' => "byzantion",
             'type' => "itp_type_head_armor",
             'code_name' => "byzantion",
             'game_id' => 1058,
             'image' => "/storage/items/byzantion.webp",
             'price' => 750,
+            'defence' => 45,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -197,24 +201,27 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 1008,
             'image' => "/storage/items/chapel-de-fer.webp",
             'price' => 750,
+            'defence' => 35,
         ]);
 
         DB::table('items')->UpdateOrInsert([
-            'name' => "crownedhelm",
+            'name' => "Crowned Helmet",
             'type' => "itp_type_head_armor",
             'code_name' => "crownedhelm",
             'game_id' => 1070,
             'image' => "/storage/items/crownedhelm.webp",
             'price' => 750,
+            'defence' => 45,
         ]);
 
         DB::table('items')->UpdateOrInsert([
-            'name' => "visored_salet",
+            'name' => "Visored Salet",
             'type' => "itp_type_head_armor",
             'code_name' => "visored_salet",
             'game_id' => 1057,
             'image' => "/storage/items/visored_salet.webp",
             'price' => 750,
+            'defence' => 58,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -224,16 +231,9 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 1056,
             'image' => "/storage/items/visored_salet_coif.webp",
             'price' => 750,
+            'defence' => 62,
         ]);
 
-        DB::table('items')->UpdateOrInsert([
-            'name' => "visored_salet_coif",
-            'type' => "itp_type_head_armor",
-            'code_name' => "visored_salet_coif",
-            'game_id' => 1056,
-            'image' => "/storage/items/visored_salet_coif.webp",
-            'price' => 750,
-        ]);
         DB::table('items')->UpdateOrInsert([
             'name' => "open_salet",
             'type' => "itp_type_head_armor",
@@ -241,15 +241,17 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 1059,
             'image' => "/storage/items/open_salet.webp",
             'price' => 750,
+            'defence' => 30,
         ]);
 
         DB::table('items')->UpdateOrInsert([
-            'name' => "frenchpepperpot",
+            'name' => "French Pepperpot",
             'type' => "itp_type_head_armor",
             'code_name' => "frenchpepperpot",
             'game_id' => 1060,
             'image' => "/storage/items/frenchpepperpot.webp",
             'price' => 750,
+            'defence' => 42,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -259,15 +261,17 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 1061,
             'image' => "/storage/items/greathelm1.webp",
             'price' => 750,
+            'defence' => 65,
         ]);
 
         DB::table('items')->UpdateOrInsert([
             'code_name' => "kettlehatfacebyrnie",
-            'name' => "kettlehatfacebyrnie",
+            'name' => "Kettlehatfacebyrnie",
             'type' => "itp_type_head_armor",
             'game_id' => 1062,
             'image' => "/storage/items/kettlehatfacebyrnie.webp",
             'price' => 750,
+            'defence' => 45,
         ]);
 
         DB::table('items')->UpdateOrInsert([
@@ -277,24 +281,27 @@ class ItemsTableSeeder extends Seeder
             'game_id' => 1063,
             'image' => "/storage/items/bolzanobucket.webp",
             'price' => 750,
+            'defence' => 60,
         ]);
 
         DB::table('items')->UpdateOrInsert([
-            'code_name' => "normanpepperpot",
+            'code_name' => "Norman Pepperpot",
             'name' => "normanpepperpot",
             'type' => "itp_type_head_armor",
             'game_id' => 1064,
             'image' => "/storage/items/normanpepperpot.webp",
             'price' => 750,
+            'defence' => 50,
         ]);
 
         DB::table('items')->UpdateOrInsert([
             'code_name' => "greathelmwhat",
-            'name' => "greathelmwhat",
+            'name' => "Great Helme",
             'type' => "itp_type_head_armor",
             'game_id' => 1065,
             'image' => "/storage/items/greathelmwhat.webp",
             'price' => 750,
+            'defence' => 64,
         ]);
 
         $item = Item::firstOrNew(array('code_name' => "col1_kettlehat2"));
@@ -304,6 +311,7 @@ class ItemsTableSeeder extends Seeder
         $item->game_id = 1066;
         $item->image = "/storage/items/col1_kettlehat2.webp";
         $item->price = 750;
+        $item->defence = 48;
         $item->save();
 
         $item = Item::firstOrNew(array('code_name' => "fullfacecoif"));
@@ -313,6 +321,7 @@ class ItemsTableSeeder extends Seeder
         $item->game_id = 1067;
         $item->image = "/storage/items/fullfacecoif.webp";
         $item->price = 750;
+        $item->defence = 25;
         $item->save();
 
         $item = Item::firstOrNew(array('code_name' => "weimarhelm"));
@@ -322,6 +331,7 @@ class ItemsTableSeeder extends Seeder
         $item->game_id = 1068;
         $item->image = "/storage/items/weimarhelm.webp";
         $item->price = 750;
+        $item->defence = 65;
         $item->save();
 
         $item = Item::firstOrNew(array('code_name' => "open_salet_coif"));
@@ -334,8 +344,8 @@ class ItemsTableSeeder extends Seeder
         $item->save();
 
         $item = Item::firstOrNew(array('code_name' => "crownedhelm"));
-        $item->code_name = "crownedhelm ";
-        $item->name = "crownedhelm ";
+        $item->code_name = "crownedhelm";
+        $item->name = "crownedhelm";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1070;
         $item->image = "/storage/items/crownedhelm.webp";
@@ -343,8 +353,8 @@ class ItemsTableSeeder extends Seeder
         $item->save();
 
         $item = Item::firstOrNew(array('code_name' => "frenchpepperpot2"));
-        $item->code_name = "frenchpepperpot2 ";
-        $item->name = "frenchpepperpot2 ";
+        $item->code_name = "frenchpepperpot2";
+        $item->name = "frenchpepperpot2";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1071;
         $item->image = "/storage/items/frenchpepperpot2.webp";
@@ -352,8 +362,8 @@ class ItemsTableSeeder extends Seeder
         $item->save();
 
         $item = Item::firstOrNew(array('code_name' => "inv_nikolskoe_helm"));
-        $item->code_name = "inv_nikolskoe_helm ";
-        $item->name = "inv_nikolskoe_helm ";
+        $item->code_name = "inv_nikolskoe_helm";
+        $item->name = "inv_nikolskoe_helm";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1072;
         $item->image = "/storage/items/inv_nikolskoe_helm.webp";
@@ -361,8 +371,8 @@ class ItemsTableSeeder extends Seeder
         $item->save();
 
         $item = Item::firstOrNew(array('code_name' => "flattophelmet"));
-        $item->code_name = "flattophelmet ";
-        $item->name = "flattophelmet ";
+        $item->code_name = "flattophelmet";
+        $item->name = "flattophelmet";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1073;
         $item->image = "/storage/items/flattophelmet.webp";
@@ -370,8 +380,8 @@ class ItemsTableSeeder extends Seeder
         $item->save();
 
         $item = Item::firstOrNew(array('code_name' => "pepperpothelm1"));
-        $item->code_name = "pepperpothelm1 ";
-        $item->name = "pepperpothelm1 ";
+        $item->code_name = "pepperpothelm1";
+        $item->name = "pepperpothelm1";
         $item->type = "itp_type_head_armor";
         $item->game_id = 1074;
         $item->image = "/storage/items/pepperpothelm1.webp";

@@ -180,5 +180,18 @@ class User extends Authenticatable
         $item = UserItem::find($this->horse);
         return $item ?? null;
     }
+    public function isHeavyArmored()
+    {
+        $head = $this->getHead()->ItemData->defence ?? 0;
+        $body = $this->getBody()->ItemData->defence ?? 0;
+        $hands = $this->getGloves()->ItemData->defence ?? 0;
+        $boots = $this->getBoots()->ItemData->defence ?? 0;
 
+        $total = $head + $body + $hands + $boots;
+        if ($total >= 50) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 }

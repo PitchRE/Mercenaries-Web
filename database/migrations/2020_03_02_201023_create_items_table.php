@@ -19,6 +19,7 @@ class CreateItemsTable extends Migration
             $table->bigInteger('game_id')->unsigned();
             $table->string('type');
             $table->string('name');
+            $table->integer('defence')->nullable();
             $table->bigInteger('price');
             $table->text('image')->nullable();
             $table->timestamps();
