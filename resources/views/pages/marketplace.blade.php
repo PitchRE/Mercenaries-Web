@@ -112,6 +112,8 @@
 
 
                 </div>
+
+                {{ $Items->links()}}
             </div>
         </div>
     </div>
