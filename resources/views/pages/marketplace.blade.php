@@ -80,7 +80,7 @@
                     @foreach ($Items as $item)
 
 
-                    <div class="column is-3 ">
+                    <div class="column is-3">
                         <div class="card">
                             <header class="card-header">
                                 <span
@@ -90,7 +90,8 @@
                             <div class="card-content">
                                 <div class="content  card-image">
 
-                                    <img src="
+                                    <img class="ItemBoxForModal" data-target="modal-item-{{$item->id}}"
+                                        src="
                                         {{$item->image ?? "https://previews.123rf.com/images/abluecup/abluecup1309/abluecup130900082/22175873-a-3d-human-character-a-question-mark.jpg"}}"
                                         alt="{{$item->name}}" srcset="" />
 
@@ -105,15 +106,18 @@
                                     <a href="{{route('buy-item', ['id' => $item->id])}}"
                                         class="card-footer-item has-background-success">Buy</a>
                                     @endif
+
                             </footer>
                         </div>
+                        @include('pages.item_modal', ['item' => $item])
                     </div>
+
                     @endforeach
 
 
                 </div>
 
-                {{ $Items->links()}}
+                {{ $Items->appends(request()->input())->links()}}
             </div>
         </div>
     </div>
@@ -127,4 +131,65 @@
         height: 200px;
     }
 </style>
+
+<script>
+    'use strict';
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Modals
+
+  var rootEl = document.documentElement;
+  var $modals = getAll('.modal');
+  var $modalButtons = getAll('.ItemBoxForModal');
+  var $modalCloses = getAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button');
+
+  if ($modalButtons.length > 0) {
+    $modalButtons.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+        rootEl.classList.add('is-clipped');
+        $target.classList.add('is-active');
+      });
+    });
+  }
+
+  if ($modalCloses.length > 0) {
+    
+    $modalCloses.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        closeModals();
+      
+      });
+    });
+  }
+
+  document.addEventListener('keydown', function (event) {
+    var e = event || window.event;
+    if (e.keyCode === 27) {
+      closeModals();
+    }
+  });
+
+  function closeModals() {
+    rootEl.classList.remove('is-clipped');
+
+    $modals.forEach(function ($el) {
+      
+      $el.classList.remove('is-active');
+      console.log($el.classList)
+    });
+  }
+
+  // Functions
+
+  function getAll(selector) {
+    return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+  }
+
+});
+
+</script>
+
 @endsection
