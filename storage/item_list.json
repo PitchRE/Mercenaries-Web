@@ -2619,7 +2619,7 @@
     }, 
     "combed_morion": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "combed_morion", 
         "game_id": 1012, 
         "head_armor": 48, 
@@ -2641,7 +2641,7 @@
     }, 
     "combed_morion_blued": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "combed_morion_blued", 
         "game_id": 1013, 
         "head_armor": 48, 
@@ -13623,7 +13623,7 @@
         "code_name": "rondel_dagger", 
         "game_id": 1052, 
         "head_armor": null, 
-        "horse_maneuver": 106, 
+        "horse_maneuver": null, 
         "horse_speed": null, 
         "image": null, 
         "leg_armor": null, 
@@ -13632,11 +13632,11 @@
         "name": "Rondel Dagger", 
         "price": 91, 
         "speed_rating": 106, 
-        "swing_damage": null, 
-        "swing_damage_type": null, 
+        "swing_damage": 0, 
+        "swing_damage_type": "cut", 
         "thrust_damage": 40, 
         "thrust_damage_type": "cut", 
-        "type": "itp_type_horse", 
+        "type": "itp_type_one_handed_wpn", 
         "weight": 1.5
     }, 
     "round_shield": {
