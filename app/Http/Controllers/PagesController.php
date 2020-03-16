@@ -31,38 +31,38 @@ class PagesController extends Controller
     {
         switch ($request->type) {
             case 'head':
-                $Items = Item::Where('type', 'itp_type_head_armor')->paginate(20);
+                $Items = Item::Where('type', 'itp_type_head_armor')->Where("buyable", true)->paginate(20);
                 break;
             case 'body':
-                $Items = Item::Where('type', 'itp_type_body_armor')->paginate(20);
+                $Items = Item::Where('type', 'itp_type_body_armor')->Where("buyable", true)->paginate(20);
                 break;
             case 'hands':
-                $Items = Item::Where('type', 'itp_type_hand_armor')->paginate(20);
+                $Items = Item::Where('type', 'itp_type_hand_armor')->Where("buyable", true)->paginate(20);
                 break;
             case 'legs':
-                $Items = Item::Where('type', 'itp_type_foot_armor')->paginate(20);
+                $Items = Item::Where('type', 'itp_type_foot_armor')->Where("buyable", true)->paginate(20);
                 break;
             case 'melee':
-                $Items = Item::Where('type', 'itp_type_two_handed_wpn')->orWhere('type', 'itp_type_one_handed_wpn')->orWhere('type', 'itp_type_polearm')->paginate(20);
+                $Items = Item::Where('type', 'itp_type_two_handed_wpn')->orWhere('type', 'itp_type_one_handed_wpn')->orWhere('type', 'itp_type_polearm')->Where("buyable", true)->paginate(20);
                 break;
             case 'ammunition':
-                $Items = Item::Where('type', 'itp_type_bullets')->orWhere('type', 'itp_type_arrows')->orWhere('type', 'itp_type_bolts')->paginate(20);
+                $Items = Item::Where('type', 'itp_type_bullets')->orWhere('type', 'itp_type_arrows')->orWhere('type', 'itp_type_bolts')->Where("buyable", true)->paginate(20);
                 break;
             case 'ranged':
-                $Items = Item::Where('type', 'itp_type_crossbow')->orWhere('type', 'itp_type_bow')->paginate(20);
+                $Items = Item::Where('type', 'itp_type_crossbow')->orWhere('type', 'itp_type_bow')->Where("buyable", true)->paginate(20);
                 break;
             case 'thrown':
                 $Items = Item::Where('type', 'itp_type_thrown')->paginate(20);
                 break;
             case 'horse':
-                $Items = Item::Where('type', 'itp_type_horse')->paginate(20);
+                $Items = Item::Where('type', 'itp_type_horse')->Where("buyable", true)->paginate(20);
                 break;
             default:
-                $Items = Item::paginate(20);
+                $Items = Item::Where("buyable", true)->paginate(20);
                 break;
         }
-
         $user = Auth::user();
+
         return view('pages.marketplace', compact('Items', 'user'));
     }
 

@@ -31,6 +31,8 @@ class CreateItemsTable extends Migration
             $table->integer("missile_speed")->nullable();
             $table->integer("horse_speed")->nullable();
             $table->integer("horse_maneuver")->nullable();
+            $table->boolean("buyable")->nullable();
+            $table->string("model_name")->nullable();
             $table->bigInteger('price');
             $table->text('image')->nullable();
             $table->timestamps();

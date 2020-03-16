@@ -22,7 +22,7 @@ class ItemsTableSeeder extends Seeder
             $item->name = $obj->name;
             $item->type = $obj->type;
             $item->game_id = $obj->game_id;
-            $item->image = "/storage/items/{$obj->code_name}.webp";
+            $item->image = "/storage/items/{$obj->model_name}.webp";
             $item->price = $obj->price;
             $item->head_armor = $obj->head_armor;
             $item->body_armor = $obj->body_armor;
@@ -36,6 +36,8 @@ class ItemsTableSeeder extends Seeder
             $item->missile_speed = $obj->missile_speed;
             $item->horse_speed = $obj->horse_speed;
             $item->horse_maneuver = $obj->horse_maneuver;
+            $item->buyable = $obj->buyable;
+            $item->model_name = $obj->model_name;
 
             $item->save();
         }
