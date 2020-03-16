@@ -57,6 +57,9 @@ class PagesController extends Controller
             case 'horse':
                 $Items = Item::Where('type', 'itp_type_horse')->Where("buyable", true)->paginate(20);
                 break;
+            case 'shield':
+                $Items = Item::Where('type', 'itp_type_shield')->Where("buyable", true)->paginate(20);
+                break;
             default:
                 $Items = Item::Where("buyable", true)->paginate(20);
                 break;

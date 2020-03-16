@@ -62,6 +62,9 @@
                         <li>
                             <a href="{{route('marketplace', ['type' => 'ammunition'])}}">Ammunition</a>
                         </li>
+                        <li>
+                            <a href="{{route('marketplace', ['type' => 'shield'])}}">Shields</a>
+                        </li>
                     </ul>
                     <p class="menu-label">
                         Other

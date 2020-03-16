@@ -199,7 +199,7 @@
     }, 
     "arena_helmet_blue": {
         "body_armor": 0, 
-        "buyable": 0, 
+        "buyable": 1, 
         "code_name": "arena_helmet_blue", 
         "game_id": 64, 
         "head_armor": 26, 
@@ -1431,7 +1431,7 @@
     }, 
     "bear_paw_shoes": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bear_paw_shoes", 
         "game_id": 1011, 
         "head_armor": 0, 
@@ -5457,7 +5457,7 @@
     }, 
     "heraldic_mail_with_surcoat": {
         "body_armor": 49, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "heraldic_mail_with_surcoat", 
         "game_id": 334, 
         "head_armor": 0, 
@@ -5479,7 +5479,7 @@
     }, 
     "heraldic_mail_with_surcoat_for_tableau": {
         "body_armor": 1, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "heraldic_mail_with_surcoat_for_tableau", 
         "game_id": 668, 
         "head_armor": 0, 
@@ -5501,7 +5501,7 @@
     }, 
     "heraldic_mail_with_tabard": {
         "body_armor": 51, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "heraldic_mail_with_tabard", 
         "game_id": 337, 
         "head_armor": 0, 
@@ -5523,7 +5523,7 @@
     }, 
     "heraldic_mail_with_tunic": {
         "body_armor": 50, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "heraldic_mail_with_tunic", 
         "game_id": 335, 
         "head_armor": 0, 
@@ -5545,7 +5545,7 @@
     }, 
     "heraldic_mail_with_tunic_b": {
         "body_armor": 50, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "heraldic_mail_with_tunic_b", 
         "game_id": 336, 
         "head_armor": 0, 
@@ -13465,7 +13465,7 @@
     }, 
     "rich_baba_ttr_1": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "rich_baba_ttr_1", 
         "game_id": 317, 
         "head_armor": 0, 
@@ -13487,7 +13487,7 @@
     }, 
     "rich_baba_ttr_2": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "rich_baba_ttr_2", 
         "game_id": 318, 
         "head_armor": 0, 
@@ -14895,7 +14895,7 @@
     }, 
     "segmented_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "segmented_helmet", 
         "game_id": 340, 
         "head_armor": 31, 
@@ -16237,7 +16237,7 @@
     }, 
     "tab_shield_heater_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_heater_a", 
         "game_id": 546, 
         "head_armor": null, 
@@ -16259,7 +16259,7 @@
     }, 
     "tab_shield_heater_b": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_heater_b", 
         "game_id": 547, 
         "head_armor": null, 
@@ -16281,7 +16281,7 @@
     }, 
     "tab_shield_heater_c": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_heater_c", 
         "game_id": 548, 
         "head_armor": null, 
@@ -16303,7 +16303,7 @@
     }, 
     "tab_shield_heater_cav_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_heater_cav_a", 
         "game_id": 550, 
         "head_armor": null, 
@@ -16325,7 +16325,7 @@
     }, 
     "tab_shield_heater_cav_b": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_heater_cav_b", 
         "game_id": 551, 
         "head_armor": null, 
@@ -16347,7 +16347,7 @@
     }, 
     "tab_shield_heater_d": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_heater_d", 
         "game_id": 549, 
         "head_armor": null, 
@@ -16369,7 +16369,7 @@
     }, 
     "tab_shield_kite_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_kite_a", 
         "game_id": 540, 
         "head_armor": null, 
@@ -16391,7 +16391,7 @@
     }, 
     "tab_shield_kite_b": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_kite_b", 
         "game_id": 541, 
         "head_armor": null, 
@@ -16413,7 +16413,7 @@
     }, 
     "tab_shield_kite_c": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_kite_c", 
         "game_id": 542, 
         "head_armor": null, 
@@ -16435,7 +16435,7 @@
     }, 
     "tab_shield_kite_cav_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_kite_cav_a", 
         "game_id": 544, 
         "head_armor": null, 
@@ -16457,7 +16457,7 @@
     }, 
     "tab_shield_kite_cav_b": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_kite_cav_b", 
         "game_id": 545, 
         "head_armor": null, 
@@ -16479,7 +16479,7 @@
     }, 
     "tab_shield_kite_d": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_kite_d", 
         "game_id": 543, 
         "head_armor": null, 
@@ -16501,7 +16501,7 @@
     }, 
     "tab_shield_pavise_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_pavise_a", 
         "game_id": 552, 
         "head_armor": null, 
@@ -16523,7 +16523,7 @@
     }, 
     "tab_shield_pavise_b": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_pavise_b", 
         "game_id": 553, 
         "head_armor": null, 
@@ -16545,7 +16545,7 @@
     }, 
     "tab_shield_pavise_c": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_pavise_c", 
         "game_id": 554, 
         "head_armor": null, 
@@ -16567,7 +16567,7 @@
     }, 
     "tab_shield_pavise_d": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_pavise_d", 
         "game_id": 555, 
         "head_armor": null, 
@@ -16589,7 +16589,7 @@
     }, 
     "tab_shield_round_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_round_a", 
         "game_id": 535, 
         "head_armor": null, 
@@ -16611,7 +16611,7 @@
     }, 
     "tab_shield_round_b": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_round_b", 
         "game_id": 536, 
         "head_armor": null, 
@@ -16633,7 +16633,7 @@
     }, 
     "tab_shield_round_c": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_round_c", 
         "game_id": 537, 
         "head_armor": null, 
@@ -16655,7 +16655,7 @@
     }, 
     "tab_shield_round_d": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_round_d", 
         "game_id": 538, 
         "head_armor": null, 
@@ -16677,7 +16677,7 @@
     }, 
     "tab_shield_round_e": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_round_e", 
         "game_id": 539, 
         "head_armor": null, 
@@ -16699,7 +16699,7 @@
     }, 
     "tab_shield_small_round_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_small_round_a", 
         "game_id": 556, 
         "head_armor": null, 
@@ -16721,7 +16721,7 @@
     }, 
     "tab_shield_small_round_b": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_small_round_b", 
         "game_id": 557, 
         "head_armor": null, 
@@ -16743,7 +16743,7 @@
     }, 
     "tab_shield_small_round_c": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tab_shield_small_round_c", 
         "game_id": 558, 
         "head_armor": null, 
