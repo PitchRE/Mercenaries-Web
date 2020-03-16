@@ -47,6 +47,8 @@
                         @if($item->horse_maneuver != null)
                         Horse Maneuver: {{$item->horse_maneuver}} <br>
                         @endif
+
+                        @Debug: <code>{{$item->model_name}}</code>
                     </div>
                     <nav class="level is-mobile">
                         <div class="level-left">
