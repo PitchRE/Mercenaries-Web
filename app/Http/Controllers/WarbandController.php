@@ -32,11 +32,11 @@ class WarbandController extends Controller
 
         } else {
 
-            $helmet = $user->getHead()->ItemData->game_id ?? 0;
-            $armor = $user->getBody()->ItemData->game_id ?? 0;
+            $helmet = $user->getHead()->ItemData->game_id ?? 1150;
+            $armor = $user->getBody()->ItemData->game_id ?? 1104;
             $gloves = $user->getGloves()->ItemData->game_id ?? 0;
-            $boots = $user->getBoots()->ItemData->game_id ?? 0;
-            $horse = $user->getHorse()->ItemData->game_id ?? 0;
+            $boots = $user->getBoots()->ItemData->game_id ?? 1164;
+            $horse = $user->getHorse()->ItemData->game_id ?? 1168;
 
             $weapon_1 = $user->getWeapon1()->ItemData->game_id ?? 0;
             $weapon_2 = $user->getWeapon2()->ItemData->game_id ?? 0;

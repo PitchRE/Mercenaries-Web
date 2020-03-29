@@ -133,7 +133,7 @@
                                 <tr>
                                     <td class="themeFontLight">Favourite Weapon</td>
                                     <td class="themeFontLight">
-                                        {{$favWpn->ItemData->name}}
+                                        {{$favWpn->ItemData->name ?? null}}
                                     </td>
                                 </tr>
                             </tbody>

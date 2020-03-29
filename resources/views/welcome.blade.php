@@ -49,11 +49,11 @@
         <h1 class="is-5 title">Installation Instructions</h1>
         <li>Download Mercenaries</li>
         <li>
-          Extract the contents of the file to
-          <code>Mount & Blade: With Fire & Sword/Modules/Mercenaries</code>
+          Extract contents of the file to
+          <code>Mount & Blade: With Fire & Sword/Modules</code>
         </li>
         <li>
-          Run <code>Mercenaries/Updater/Mercenaries-Updater.exe</code>
+          Run <code>Mercenaries/Mercenaries-Updater.exe</code>
         </li>
         <li>Run the game and join the server.</li>
         <li>
@@ -72,7 +72,7 @@
         <li style="margin-left: 30px;">*Linux Mint, Ubuntu &nbsp <i class="fas fa-exclamation-triangle"></i> </li>
         <br>
         <p style="font-size: 0.7rem;">*Mercenaries Updater doesn't support Linux <i class="fab fa-linux"></i>
-          distributions. You have to download every new version from Github <i class="fab fa-linux"></i>.</p>
+          distributions. However, you can run with WineHQ. <i class="fab fa-linux"></i>.</p>
         <br>
 
 

@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
             $table->string('unique_id')->unique();
             $table->integer('kills')->default(0);
             $table->integer('deaths')->default(0);
-            $table->bigInteger('gold')->default(200);
+            $table->bigInteger('gold')->default(3000);
             $table->integer('rounds_won')->default(0);
             $table->integer('rounds_lost')->default(0);
 
